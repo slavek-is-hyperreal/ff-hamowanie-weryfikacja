@@ -19,3 +19,5 @@ Konsekwencja zapisana wprost: badanie testuje **metodę w poprawionym układzie*
 ## Źródło
 
 Kod i ustawienia przenoszone z `/my_data/VectorLegis/eksperymenty/forward_forward/potwierdzenie_30_ziaren/` (commit `9d58048` repozytorium `eksperymenty`). Kod kopiowany, nie importowany; katalog źródłowy pozostaje nietknięty.
+
+**D4. Publiczne repozytorium GitHub jako znacznik czasu – decyzja oczekuje.** Do zamrożenia (§9 protokołu) potrzebna zgoda autora na utworzenie publicznego repozytorium (subtree split wyłącznie tego folderu). Bez zgody: tag lokalny i zastrzeżenie w raporcie.
