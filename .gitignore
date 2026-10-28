@@ -1,0 +1,7 @@
+dane/raw/
+.venv/
+__pycache__/
+*.pyc
+wyniki/**/ckpt/
+wyniki/**/zaslepione/
+wyniki/**/test/
