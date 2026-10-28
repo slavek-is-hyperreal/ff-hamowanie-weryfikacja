@@ -46,7 +46,7 @@ def sha256(path):
 
 def _versions(torch):
     v = {"python": platform.python_version(), "torch": torch.__version__, "host": platform.node(),
-         "tf32": bool(torch.backends.cuda.matmul.allow_tf32)}
+         "tf32": bool(torch.backends.cuda.matmul.allow_tf32), "MKL_CBWR": os.environ.get("MKL_CBWR")}
     if torch.cuda.is_available():
         v["cuda"] = torch.version.cuda
         v["gpu"] = torch.cuda.get_device_name(0)

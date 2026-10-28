@@ -1,5 +1,7 @@
 # Protokół v6: curriculum hamowania i próg BCM w Forward-Forward – sprawdzenie konfirmacyjne
 
+> **Wersja do zamrożenia** (tag `hamowanie-prereg` po pilocie, §9).
+
 Autor: Sławomir Majcher. Wersja po recenzjach R1–R5 (`recenzje/`, odpowiedzi `odpowiedzi/O1.md`–`O5.md`). Decyzje: `DECYZJE_AUTORA.md` (D1–D4). Audyt źródła: `00_AUDYT.md`. Protokół jest **samowystarczalny**: wszystkie liczby, reguły i zdania raportu są tutaj; odwołania do `../eksperyment_ff_od_zera/PROTOKOL_v5.md` („FF-v5”) wskazują wyłącznie pochodzenie mechaniki.
 
 **Źródło metody:** `/my_data/VectorLegis/eksperymenty/forward_forward/potwierdzenie_30_ziaren/` (commit `9d58048`): `siec_ff.py`, `zadanie_fashion_mnist.py`, `dane.py`; opis: `blog/forward_forward_hamowanie.md`.
@@ -108,7 +110,7 @@ Zgodność ze źródłem (sprawdzona w R1): `CUR` = `polowa_na_polowe`, `ANN` = 
 - Kolejność biegów w etapie permutowana ziarnem `seed_from("<etap>-order")` (osobnym dla każdego etapu).
 
 ### 5.3. Etap B – wybór konfiguracji
-- Dla każdego ramienia i zbioru 3 kandydaci × 10 ziaren (pula B). Wybór: najwyższa średnia walidacyjna (biegi z NaN oceniane jak w §3.4); dokładna równość średnich – mniejszy lr. Kandydat z NaN w > 5 z 10 ziaren jest odrzucany (dowolne ramię); jeśli odrzuceni wszyscy – §5.6.
+- Dla każdego ramienia i zbioru 3 kandydaci × 10 ziaren (pula B). Wybór: najwyższa średnia walidacyjna (biegi z NaN oceniane jak w §3.4); dokładna równość średnich – mniejszy lr. Kandydat z awarią (NaN albo walidacja ≤ 15%, §3.4) w > 5 z 10 ziaren jest odrzucany (dowolne ramię); jeśli odrzuceni wszyscy – §5.6.
 - Z biegów `BCM` w wybranej konfiguracji: θ_l końcowe → `PLW` (§4.2).
 - Wyjście: `ETAP_B_WYBOR.json` – **wyłącznie** wybrane konfiguracje i θ_l `PLW` (bez średnich); średnie walidacyjne kandydatów zapisywane do `zaslepione/B/` (otwierane po kroku 3 §5.8, do raportu). Skrypt wyboru czyta średnie, ale wypisuje tylko konfiguracje.
 

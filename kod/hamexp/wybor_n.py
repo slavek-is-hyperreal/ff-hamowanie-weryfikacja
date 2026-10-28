@@ -36,6 +36,32 @@ def _ids(stage, ds, arm, seeds, sel):
     return [(st, _jid(st, ds, arm, s, p)) for s in seeds]
 
 
+def hash_inputs(results, stage, out_path):
+    """Timestamp of the inputs of N (R3-09): sha256 of every zaslepione/*.json of the stage(s), to be
+    committed together with the output."""
+    import glob
+    from .runner import sha256
+    stages = ["P"] if stage == "P" else ["B", "B2"]
+    lines = [f"{sha256(p)}  {os.path.relpath(p, results)}" for st in stages
+             for p in sorted(glob.glob(os.path.join(results, st, "zaslepione", "*.json")))]
+    with open(out_path, "w") as f:
+        f.write("\n".join(lines) + "\n")
+    return len(lines)
+
+
+def run_costs(results, stage, price_usd_h, k):
+    import glob
+    walls = []
+    for st in (["P"] if stage == "P" else ["B", "B2"]):
+        for p in glob.glob(os.path.join(results, st, "runs", "*.json")):
+            with open(p) as f:
+                walls.append(json.load(f)["wall_time_sec"])
+    mean_wall = float(np.mean(walls)) if walls else None
+    cost = (price_usd_h * mean_wall / 3600.0 / k) if (walls and price_usd_h and k) else None
+    return {"n_runs": len(walls), "mean_wall_sec": mean_wall, "k": k, "price_usd_h": price_usd_h,
+            "usd_per_run": cost}
+
+
 def collect(results, stage, sel=None):
     seeds = POOL_P if stage == "P" else POOL_B
     out = {}
@@ -67,7 +93,7 @@ def decide(stats_list):
         q[h] = {"B": qq[B], **{f"K{i}": qq[k] for i, k in enumerate(Ks)}}
         rs = [s[h]["rho"] for s in stats_list if s[h]["rho"] is not None]
         if rs:
-            rho = min(max(max(rs), 0.0), 0.5)
+            rho = min(max(min(rs), 0.0), 0.5)  # lower rho = lower IUT power = conservative
     return sd, q, rho
 
 
@@ -92,6 +118,8 @@ def main(argv=None):
     ap.add_argument("--out", required=True)
     ap.add_argument("--params", required=True)
     ap.add_argument("--reps", type=int, default=10000)
+    ap.add_argument("--cena-usd-h", type=float, default=None)
+    ap.add_argument("--k", type=int, default=None)
     a = ap.parse_args(argv)
     from .streams import seed_from
     seed = seed_from("choose_n") % (2 ** 32)
@@ -104,8 +132,11 @@ def main(argv=None):
         st = collect(a.results, "B", sel)
         with open(a.minipilot) as f:
             sources = [json.load(f)["stats"], st]
+    n_hashed = hash_inputs(a.results, a.zrodlo, os.path.join(os.path.dirname(os.path.abspath(a.out)),
+                                                             f"HASHE_ZASLEPIONE_{a.zrodlo}.txt"))
     with open(a.out, "w") as f:
-        json.dump({"zrodlo": a.zrodlo, "stats": st}, f, indent=1)
+        json.dump({"zrodlo": a.zrodlo, "stats": st, "koszty": run_costs(a.results, a.zrodlo, a.cena_usd_h, a.k),
+                   "n_plikow_wejsciowych": n_hashed}, f, indent=1)
     sd, q, rho = decide(sources)
     m_by_h = {h: len(HYP[h][1]) for h in HYP}
     n, tab = A.choose_n(sd, rho, q, (S_UNITS, S_UNITS), FAIL_VALUE, BASE, (TARGET, TARGET), m_by_h,

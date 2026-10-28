@@ -10,8 +10,8 @@ Badanie zaplanowane z góry (prerejestracja), autor: Sławomir Majcher.
 |---|---|
 | Audyt kampanii źródłowej | `00_AUDYT.md` |
 | Decyzje autora | `DECYZJE_AUTORA.md` (D1–D4) |
-| Protokół | `PROTOKOL_v6.md` – kandydat do zamrożenia (5 rund recenzji: `recenzje/`, odpowiedzi: `odpowiedzi/`) |
-| Kod i testy | w przygotowaniu (`kod/`) |
+| Protokół | `PROTOKOL_v6.md` – **wersja do zamrożenia** (5 rund recenzji: `recenzje/`, odpowiedzi: `odpowiedzi/`) |
+| Kod i testy | `kod/` – testy T1–T8, autotest analizy 28/28, test końcowy `final.py` |
 | **Zamrożenie** | tag `hamowanie-prereg` – po pilocie, przed Etapem A (§9 protokołu) |
 
 Historia tego repozytorium (daty pushów) służy jako zewnętrzny znacznik czasu. Każda zmiana po tagu trafia do `ODSTEPSTWA.md`.
