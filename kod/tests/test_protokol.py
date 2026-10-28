@@ -153,3 +153,41 @@ def test_T8_input_encoding():
     assert torch.allclose(e[:, :784].norm(dim=1), torch.ones(32), atol=1e-6)
     assert torch.allclose(e[torch.arange(32), 784 + y], torch.full((32,), data.LABEL_VALUE))
     assert torch.equal(e[:, :784], xn)
+
+
+def test_T7_pipeline_with_nan(tmp_path, monkeypatch):
+    """§8.2 T7 (review K1-09): runner → write_hashes (NAN entry) → verify → evaluate for a NaN run and a
+    normal run, on smoke-test seeds (69001+), 1 epoch, with mocked test sets (the real test is not opened)."""
+    from hamexp import evaluate_test, runner
+    out = str(tmp_path)
+    jobs = [{"stage": "C", "kind": "ff", "dataset": "mnist", "arm": "STD", "seed": 69001, "cfg": {"lr": 1e-3, "theta": 1.0}},
+            {"stage": "C", "kind": "ff", "dataset": "mnist", "arm": "CUR", "seed": 69002,
+             "cfg": {"lr": 1e-3, "theta": float("inf")}}]
+    plan = os.path.join(out, "C.json")
+    json.dump(jobs, open(plan, "w"))
+    orig = train.train_ff
+    monkeypatch.setattr(train, "train_ff", lambda *a, **k: orig(*a, **{**k, "epochs": 1}))
+    torch_mod = runner.setup_torch("cpu")
+    ds = runner.load_train_sets({"mnist"}, torch_mod.device("cpu"), torch_mod)
+    for j in jobs:
+        assert runner.run_job(j, ds, out, torch_mod.device("cpu"), torch_mod) == "done"
+    assert json.load(open(os.path.join(out, "C", "runs", runner.job_id(jobs[1]) + ".json")))["nan"] is True
+    h = os.path.join(out, "H.txt")
+    evaluate_test.write_hashes(out, h, plan)
+    txt = open(h).read()
+    assert "NAN " in txt and "C/ckpt/" in txt and "FILE " in txt
+    real_load = data.load
+
+    def fake_load(dataset, part):
+        if (dataset, part) in data.TEST_PARTS:
+            n = 200
+            return torch.rand(n, 784), torch.randint(0, 10, (n,))
+        return real_load(dataset, part)
+    monkeypatch.setattr(data, "load", fake_load)
+    assert evaluate_test.evaluate(out, h, "cpu", plan) == 2
+    res_nan = torch.load(os.path.join(out, "test", "C", runner.job_id(jobs[1]) + ".pt"), weights_only=False)
+    assert set(res_nan) == {"mnist", "qmnist"} and set(res_nan["mnist"]) == {"main", "no_l0", "cross"}
+    assert evaluate_test.verify_predictions(out)
+    os.remove(os.path.join(out, "C", "runs", runner.job_id(jobs[0]) + ".json"))
+    with pytest.raises(SystemExit):
+        evaluate_test.verify(out, h, plan)

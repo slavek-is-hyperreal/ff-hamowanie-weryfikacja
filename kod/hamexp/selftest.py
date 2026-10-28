@@ -55,22 +55,32 @@ def main(argv=None):
     check("v_niespojny_zgodny", A.combine(vP, vRp)["category"] == "NIESPOJNY-ZGODNY-KIERUNEK", {}, res)
     check("xiii_P_R_bez_plus", A.combine(vP, vR)["category"] == "NIESPOJNY-CZESCIOWY", {}, res)
 
-    # (vi) identical classes of final vs reference on generated data (sym_nan-like generator, same seeds)
+    # (vi) full path (§7.2 incl. stability rule + §7.3), final implementation vs reference, 1 000 data sets
+    #      from the sym_nan.py-style generator (normal differences + failures scored as class 0)
     mism = 0
-    for t in range(300):
+    for t in range(1000):
         n = [30, 60, 120][t % 3]
         m = 1 + (t % 2)
-        D = []
-        for _ in range(m):
-            d = _d(rng, n, rng.choice([-100, -50, 0, 50, 100]))
-            k = rng.integers(0, 4)
-            d[:k] = -7700 if rng.random() < 0.5 else 7700
-            if rng.random() < 0.2:
-                d[k:k + 2] = 0
-            D.append(d)
-        if A.verdict_dataset(D, S)["category"] != R.kategoria([list(d) for d in D], S):
+        per_ds = []
+        for _ds in range(2):
+            fB = rng.random(n) < rng.choice([0.0, 0.03, 0.15])
+            D, fKs = [], []
+            for _ in range(m):
+                fK = rng.random(n) < rng.choice([0.0, 0.03])
+                d = _d(rng, n, rng.choice([-100, -50, 0, 50, 100]))
+                d = np.where(fB & ~fK, FAILV - 9000, np.where(fK & ~fB, 9000 - FAILV, np.where(fB & fK, 0, d)))
+                D.append(d.astype(np.int64))
+                fKs.append(fK)
+            per_ds.append((D, S, fB, fKs))
+        vs, sts = [], []
+        for D, S_, fB, fKs in per_ds:
+            v = A.apply_stability(A.verdict_dataset(D, S_), st := A.stability(fB, fKs))
+            vs.append(v)
+            sts.append(st)
+        mine = (A.combine(vs[0], vs[1])["category"], A.combine_stability(sts[0], sts[1]))
+        if mine != R.werdykt(per_ds):
             mism += 1
-    check("vi_zgodnosc_implementacji", mism == 0, {"niezgodne": mism, "z": 300}, res)
+    check("vi_zgodnosc_pelnej_sciezki", mism == 0, {"niezgodne": mism, "z": 1000}, res)
 
     # vectorized simulation test vs scipy
     X = np.stack([_d(rng, 45, 20) for _ in range(200)])
@@ -94,6 +104,23 @@ def main(argv=None):
             rate = float((A.wilcoxon_p_vec(X, alt) <= A.ALPHA1 / 2).mean())
             lim = A.ALPHA1 / 2 + 3 * math.sqrt(A.ALPHA1 / 2 * (1 - A.ALPHA1 / 2) / a.reps)
             check(f"viii_rozmiar_{alt}_N{n}", rate <= lim, {"rate": rate, "limit": lim}, res)
+
+    # (viii) H3 variant (m = 2, both comparators Δ = 0): P(class P) per dataset
+    for n in (30, 120):
+        X1 = np.stack([_d(rng, n, 0) for _ in range(a.reps)])
+        X2 = np.stack([_d(rng, n, 0) for _ in range(a.reps)])
+        rate = float((A._cat_vec([X1, X2], S, A.ALPHA1) == "P").mean())
+        lim = A.ALPHA1 / 2 + 3 * math.sqrt(A.ALPHA1 / 2 * (1 - A.ALPHA1 / 2) / a.reps)
+        check(f"viii_H3_klasaP_N{n}", rate <= lim, {"rate": rate, "limit": lim}, res)
+
+    # (ix) H3 variant: first comparator at ±S, second at 0 → P(class R) ≤ α′
+    for n in (30, 120):
+        for delta in (-S, S):
+            X1 = np.stack([_d(rng, n, delta) for _ in range(a.reps)])
+            X2 = np.stack([_d(rng, n, 0) for _ in range(a.reps)])
+            rate = float((A._cat_vec([X1, X2], S, A.ALPHA1) == "R").mean())
+            lim = A.ALPHA1 + 3 * math.sqrt(A.ALPHA1 * (1 - A.ALPHA1) / a.reps)
+            check(f"ix_H3_R_{delta}_N{n}", rate <= lim, {"rate": rate, "limit": lim}, res)
 
     # (ix) class R at the equivalence margin, Δ = −S and +S
     for n in (30, 120):

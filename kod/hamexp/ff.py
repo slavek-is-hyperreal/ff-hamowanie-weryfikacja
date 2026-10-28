@@ -98,7 +98,9 @@ class FFNet:
             z_pos, z_neg = layer(a_pos), layer(a_neg)
             g_pos, g_neg = goodness(z_pos, formula), goodness(z_neg, formula)
             loss = F.softplus(ths[i] - g_pos).mean() + F.softplus(g_neg - ths[i]).mean()
-            if not torch.isfinite(loss):
+            # §3.4: non-finite loss OR goodness (z finite but z^2 overflowing gives zero gradient and
+            # would otherwise train on silently; review K1-14)
+            if not (torch.isfinite(loss) and torch.isfinite(g_pos).all() and torch.isfinite(g_neg).all()):
                 return False
             opt.zero_grad()
             loss.backward()

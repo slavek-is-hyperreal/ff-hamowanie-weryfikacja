@@ -216,7 +216,7 @@ def stability(fail_B, fail_K_list, alpha1=ALPHA1):
 def apply_stability(v, stab):
     """Class R is not allowed with a stability difference (§7.2) → N."""
     if v["class"] == "R" and stab["claim"] != "BRAK":
-        v = dict(v, category="NIEROZSTRZYGNIETY", class_="N", stab_blocked=True)
+        v = dict(v, category="NIEROZSTRZYGNIETY", stab_blocked=True)
         v["class"] = "N"
     return v
 
@@ -279,35 +279,58 @@ def _cat_vec(D_list, S, alpha1):
     return cls
 
 
+def _stab_vec(fB, fKs, alpha1):
+    """Vectorized stability claim per replicate: 'G' (STAB-GORSZA), 'L' (STAB-LEPSZA) or '-'."""
+    a = alpha1 / 2
+    m = len(fKs)
+    pm, pp = [], []
+    for fK in fKs:
+        b_only = (fB & ~fK).sum(1)
+        k_only = (~fB & fK).sum(1)
+        n = b_only + k_only
+        pm.append(np.where(n > 0, stats.binom.sf(b_only - 1, np.maximum(n, 1), 0.5), 1.0))
+        pp.append(np.where(n > 0, stats.binom.sf(k_only - 1, np.maximum(n, 1), 0.5), 1.0))
+    PM = np.sort(np.stack(pm, 1), 1)
+    worse = PM[:, 0] <= a / m  # first Holm step decides "at least one rejected"
+    better = (np.stack(pp, 1) <= a).all(1)
+    return np.where(worse, "G", np.where(better, "L", "-"))
+
+
 def simulate_joint(n, m, delta_units, sd_units, rho, q, S, fail_value, base, reps, seed, alpha1=ALPHA1):
-    """Joint class rates over two datasets. Per dataset d: arms acc = base + u_s + e (counts);
-    q: dict arm -> failure prob ('B', 'K0', 'K1', ...). Returns dict class -> rate (joint)."""
+    """§7.6 simulation of the full procedure (test, Holm/IUT, stability rule R + STAB → N, §7.3).
+    q: per dataset dict {'B': .., 'K0': .., ...}. Returns {'joint': {P,R,G,N}, 'per_dataset': [...],
+    'stab_worse': [per dataset P(STAB-GORSZA)]}."""
     rng = np.random.default_rng(seed)
-    joint = []
+    per, stab = [], []
     for ds in range(2):
         sd = sd_units[ds]
-        # var(d) = sB^2 + sK^2, corr(d_1, d_2) = sB^2 / (sB^2 + sK^2) = rho (m > 1); m = 1: equal split
         r = rho if m > 1 else 0.5
         sB, sK = sd * math.sqrt(r), sd * math.sqrt(1 - r)
         accB = base[ds] + rng.normal(0, sB, (reps, n))
-        failB = rng.random((reps, n)) < q["B"]
-        D_list = []
+        failB = rng.random((reps, n)) < q[ds]["B"]
+        D_list, fKs = [], []
         for k in range(m):
             accK = base[ds] - delta_units[ds][k] + rng.normal(0, sK, (reps, n))
-            failK = rng.random((reps, n)) < q[f"K{k}"]
+            failK = rng.random((reps, n)) < q[ds][f"K{k}"]
             b = np.where(failB, fail_value[ds], np.rint(accB))
             kk = np.where(failK, fail_value[ds], np.rint(accK))
             D_list.append((b - kk).astype(np.int64))
-        joint.append(_cat_vec(D_list, S[ds], alpha1))
-    c1, c2 = joint
+            fKs.append(failK)
+        cls = _cat_vec(D_list, S[ds], alpha1)
+        st = _stab_vec(failB, fKs, alpha1)
+        cls = np.where((cls == "R") & (st != "-"), "N", cls)
+        per.append(cls)
+        stab.append(float((st == "G").mean()))
+    c1, c2 = per
     out = np.where((c1 == c2) & (c1 != "N"), c1, "N")
-    return {c: float((out == c).mean()) for c in ("P", "R", "G", "N")}
+    rate = lambda c: {k: float((c == k).mean()) for k in ("P", "R", "G", "N")}  # noqa: E731
+    return {"joint": rate(out), "per_dataset": [rate(c1), rate(c2)], "stab_worse": stab}
 
 
 def choose_n(sd_units, rho, q, S, fail_value, base, target_delta_units, m_by_h, ladder=(30, 45, 60, 90, 120),
              reps=10000, seed=None):
     """§7.6: smallest N on the ladder meeting power targets for all hypotheses, else 120.
-    sd_units: {h: (sd_mnist, sd_fmnist)}; q: {h: {'B':..,'K0':..}}; m_by_h: {h: m}.
+    sd_units: {h: (sd_mnist, sd_fmnist)}; q: {h: [ {'B':..,'K0':..} per dataset ]}; m_by_h: {h: m}.
     Target: joint P for H1–H3 at +target, joint G for H4 at −target; >= 0.8."""
     from .streams import seed_from
     seed = seed_from("choose_n") if seed is None else seed
@@ -322,7 +345,7 @@ def choose_n(sd_units, rho, q, S, fail_value, base, target_delta_units, m_by_h, 
                                reps, seed % (2 ** 32))
             need = "G" if h == "H4" else "P"
             table[n][h] = r
-            ok &= r[need] >= 0.8
+            ok &= r["joint"][need] >= 0.8
         if ok:
             return n, table
     return ladder[-1], table

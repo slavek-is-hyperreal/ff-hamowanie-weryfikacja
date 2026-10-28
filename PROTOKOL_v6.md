@@ -124,7 +124,7 @@ Jeśli wybrana konfiguracja któregokolwiek ramienia leży w skrajnych 10% zakre
 
 ### 5.6. Sytuacje awaryjne
 - Wszystkie 16 punktów ramienia odrzucone w Etapie A: kryterium odrzucenia łagodzone do „mniej niż 2 z 5 ziaren z NaN/≤ 15%”; jeśli nadal brak – ramię uznane za nietrenowalne w tym układzie, hipotezy z jego udziałem otrzymują kategorię NIEROZSTRZYGNIĘTY z dopiskiem „ramię nietrenowalne”.
-- Wszyscy kandydaci ramienia odrzuceni w Etapie B (§5.3): ramię nietrenowalne (j.w.). Jeśli nietrenowalne jest `BCM`, `PLW` nie ma progów i nie jest uruchamiane; H3 = NIEROZSTRZYGNIĘTY z dopiskiem „`BCM` nietrenowalne”.
+- Wszyscy kandydaci ramienia odrzuceni w Etapie B (§5.3): ramię nietrenowalne (j.w.). Ramię nietrenowalne **choćby na jednym zbiorze** daje hipotezie z jego udziałem kategorię łączną NIEROZSTRZYGNIĘTY (nie NIESPÓJNY-*), z dopiskiem wskazującym ramię i zbiór. Jeśli nietrenowalne jest `BCM`, `PLW` nie ma progów i nie jest uruchamiane; H3 = NIEROZSTRZYGNIĘTY z dopiskiem „`BCM` nietrenowalne”.
 - Reguły odrzucenia (§5.2) i przejścia top-3 (§5.3) stosują się identycznie do A-PLW, B-PLW, A-BP i B-BP.
 - Awaria instancji: biegi są atomowe (zapis po zakończeniu); runner wznawia brakujące. **W obrębie etapu** zmiana typu GPU jest zabroniona; nowa instancja tego samego typu wymaga T6 przed startem. **Między etapami** zmiana typu GPU jest dozwolona po T6 na nowym typie, z wpisem w `ODSTEPSTWA.md`. Zmniejszenie k przy braku pamięci (OOM) jest dozwolone w każdej chwili z wpisem w `ODSTEPSTWA.md` (k nie wpływa na wynik biegu; T6).
 
@@ -134,10 +134,10 @@ Jeśli wybrana konfiguracja któregokolwiek ramienia leży w skrajnych 10% zakre
 - Metryki walidacyjne → `zaslepione/` (nieotwierane do kroku 2 §5.8).
 
 ### 5.8. Ewaluacja końcowa (R1-16)
-1. Po zakończeniu Etapu C: hashe SHA-256 wszystkich checkpointów liczone **na instancji**, plik pobrany, commit i push na GitHub.
+1. Po zakończeniu Etapu C (komplet biegów z planem, brak plików `.error` – inaczej odmowa): hashe SHA-256 wszystkich checkpointów (biegi z NaN: hash rekordu), **wszystkich rekordów `C/runs/*.json` i plików `C/zaslepione/*.json`** (status awarii ustalony przed otwarciem testu), liczone **na instancji**; plik pobrany, commit i push na GitHub.
 2. **Dopiero potem** dane testowe (MNIST-test, F-MNIST-test, QMNIST) są kopiowane na instancję (wcześniej ich tam nie ma; runner treningowy nie ma ścieżki do testu).
 3. Jedno polecenie na instancji: weryfikacja hashy, odczyt główny i odczyty eksploracyjne E3, QMNIST; zapis predykcji per przykład.
-4. Pobranie predykcji, weryfikacja hashy plików predykcji, commit.
+4. Pobranie predykcji, weryfikacja hashy plików predykcji (`HASHE_PREDYKCJI.txt`, zapisany przez polecenie z kroku 3), commit.
 5. Zniszczenie instancji.
 - Awaria instancji między krokami 1 a 4: checkpointy są synchronizowane lokalnie na bieżąco (rsync + weryfikacja hashy); ewaluacja może zostać powtórzona na nowej instancji tego samego typu z tymi samymi hashami – z wpisem w `ODSTEPSTWA.md`.
 - Etap C na kilku instancjach: hashe checkpointów liczone na każdej instancji przed jej zniszczeniem; ewaluacja na jednej instancji po zebraniu wszystkich checkpointów (zweryfikowanych hashami).
@@ -158,6 +158,7 @@ Jeśli wybrana konfiguracja któregokolwiek ramienia leży w skrajnych 10% zakre
 - Strumienie są identyczne dla wszystkich ramion przy danym ziarnie (parowanie).
 - Pule ziaren (rozłączne, nowe względem źródła): P 60001–60010, A 61001–61005, B 62001–62010, C 63001–(63000 + N).
 - Dane: pliki źródłowe z oficjalnych źródeł, hashe w `dane/SHA256SUMS` (weryfikowane przy każdym wczytaniu).
+- Pozostałe ziarna: punkty Sobola – `seed_from("A-sobol") mod 2³¹`; bootstrap (§7.7a) – `seed_from("bootstrap", H)`; symulacja N – `seed_from("choose_n")`; autotest – `seed_from("autotest")`.
 - Determinizm: `CUBLAS_WORKSPACE_CONFIG=:4096:8`, `torch.use_deterministic_algorithms(True)`, float32, TF32 wyłączone, `torch.set_num_threads(1)` na proces; wersje: obraz `pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime` (torch 2.5.1, Python 3.11) – zapisywane w każdym rekordzie biegu.
 
 ## 7. Analiza
@@ -165,7 +166,7 @@ Jeśli wybrana konfiguracja któregokolwiek ramienia leży w skrajnych 10% zakre
 ### 7.1. Test elementarny
 - d_i = Acc_B(s_i) − Acc_K(s_i) [p.p.], i = 1…N.
 - α = 0.05, Bonferroni na 4 hipotezy: **α′ = 0.0125**.
-- **Test elementarny (jedyny test główny): test Wilcoxona rangowany ze znakiem na d − δ** dla δ ∈ {−S, 0, +S}, jednostronnie; zera metodą Pratta; `scipy.stats.wilcoxon(…, zero_method="pratt", method="auto")` (dokładny rozkład dla N ≤ 50 bez wiązań i zer, w pozostałych przypadkach przybliżenie normalne z poprawką na wiązania). Kategorie z wartości p (inwersja testu = przedział Hodgesa–Lehmanna; HL raportowany jako estymata punktowa z przedziałem (1 − α′)). **Brak testu normalności i brak warunkowego wyboru testu.** Test t – wrażliwość (§7.7b).
+- **Test elementarny (jedyny test główny): test Wilcoxona rangowany ze znakiem na d − δ** dla δ ∈ {−S, 0, +S}, jednostronnie; zera metodą Pratta; `scipy.stats.wilcoxon(…, zero_method="pratt", method="auto")` (dokładny rozkład scipy dla N ≤ 50 bez zer – przy wiązaniach statystyka zaokrąglana zachowawczo: `greater` → sf(floor(R⁺)), `less` → cdf(ceil(R⁺)); w pozostałych przypadkach przybliżenie normalne z wariancją uwzględniającą wiązania, bez poprawki na ciągłość). Kategorie z wartości p (inwersja testu = przedział Hodgesa–Lehmanna; HL raportowany jako estymata punktowa z przedziałem (1 − α′)). **Brak testu normalności i brak warunkowego wyboru testu.** Test t – wrażliwość (§7.7b).
 - Asymptotyczna efektywność względna testu rangowego wobec testu t przy normalnych różnicach: 0.955 (ok. 5% więcej ziaren dla tej samej mocy). Test zakłada symetrię d wokół pseudomediany; przy ≥ 10% awarii w jednym ramieniu i N = 30 rozmiar ok. 1.4 × nominał (R5; §12).
 - **Wartości d w liczbach całkowitych:** d = (liczba poprawnych odpowiedzi B) − (liczba poprawnych K) na danym zbiorze; S w tych jednostkach = 50 (10 000 przykładów) albo 250 (QMNIST-50k); d − δ liczone dokładnie. Raport przelicza na p.p.
 - Metoda jawnie: `scipy.stats.wilcoxon(d − δ, zero_method="pratt", alternative=…, method="exact")` przy N ≤ 50 i braku zer w d − δ, w pozostałych przypadkach `method="approx", correction=False`; scipy 1.14.1 (przypięte w `kod/README.md` i w rekordzie analizy). Decyzje wyłącznie z wartości p; przedział HL jest opisowy.
@@ -264,12 +265,12 @@ Słowa zakazane: „dowodzi”, „przełom”, „bezprecedensowy”, „idealn
 - Wrażliwość na S: kategorie przeliczane dla S ∈ {0.25, 1.0} (§7.7e), raportowane w tabeli wrażliwości.
 
 ### 7.6. Wybór N (R1-05, R2-01, R2-03)
-- Wejście skryptu `choose_n`: **wyłącznie SD różnic** (σ_d) i ρ, nigdy średnie; skrypt nie wypisuje średnich (zasada skryptu; surowe rekordy zawierają walidację i asystent ich nie przegląda przed Etapem C poza SD – R2-11). σ_d liczone **z par bez awarii**. Model symulacji: dla ziarna s i ramienia a dokładność = μ_a + u_s + e_{s,a} (wspólny efekt ziarna u_s i szum ramienia dobrane tak, by odtworzyć σ_d i ρ); niezależnie każdy bieg ulega awarii z prawdopodobieństwem q_a (per ramię i zbiór; dla N_P z pilota, dla N_B z wybranej konfiguracji Etapu B łącznie z pilotem; minimum 1%), a bieg z awarią ma dokładność = udział klasy 0 (para z awarią obu ramion daje d = 0); dokładności zaokrąglane do liczby poprawnych odpowiedzi (siatka jak w §7.1); stosowana jest pełna procedura §7.2–§7.3 (test główny, Holm/IUT, łączenie zbiorów; stabilność raportowana obok); 10 000 powtórzeń; obliczenia lokalnie (CPU), nie na Vast; σ_d × 1.29 (niepewność σ, jak FF-v5); ρ (H3) = min(ρ̂, 0.5), ≥ 0. Symulacja ma **stałe ziarno** `seed_from("choose_n")`.
+- Wejście skryptu `choose_n`: **wyłącznie SD różnic** (σ_d) i ρ, nigdy średnie; skrypt nie wypisuje średnich (zasada skryptu; surowe rekordy zawierają walidację i asystent ich nie przegląda przed Etapem C poza SD – R2-11). σ_d liczone **z par bez awarii**. Model symulacji: dla ziarna s i ramienia a dokładność = μ_a + u_s + e_{s,a} (wspólny efekt ziarna u_s i szum ramienia dobrane tak, by odtworzyć σ_d i ρ); niezależnie każdy bieg ulega awarii z prawdopodobieństwem q_a (per ramię i zbiór, z połączonych liczności: liczba awarii / liczba biegów; dla N_P z pilota, dla N_B z wybranej konfiguracji Etapu B łącznie z pilotem; minimum 1%), a bieg z awarią ma dokładność = udział klasy 0 (para z awarią obu ramion daje d = 0); dokładności zaokrąglane do liczby poprawnych odpowiedzi (siatka jak w §7.1); stosowana jest pełna procedura §7.2–§7.3 (test główny, Holm/IUT, reguła R + STAB → N, łączenie zbiorów; moc STAB-GORSZA raportowana obok); 10 000 powtórzeń; obliczenia lokalnie (CPU), nie na Vast; σ_d × 1.29 (niepewność σ, jak FF-v5); ρ (H3) = min(ρ̂, 0.5), ≥ 0. Symulacja ma **stałe ziarno** `seed_from("choose_n")`.
 - Cel mocy (symulacja jak wyżej, różnice normalne o SD σ_d per zbiór):
   - H1, H2, H3: P(łączna klasa P) ≥ 0.8 przy prawdziwym **Δ = 1.5·S = 0.75 p.p.** na obu zbiorach;
   - H4: P(łączna klasa G) ≥ 0.8 przy Δ = −0.75 p.p. na obu zbiorach;
   - moc równoważności (klasa R przy Δ = 0) raportowana, bez wymogu;
-  - `PARAMETRY.json` zawiera tabelę mocy (klasy P, R, G) przy Δ ∈ {0, S, 1.5·S, 2·S} dla wybranego N; moc R w raporcie liczona z σ planistycznego, nie obserwowanego.
+  - `PARAMETRY.json` zawiera tabelę mocy (klasy P, R, G; łącznie i per zbiór; P(STAB-GORSZA)) przy Δ ∈ {0, S, 1.5·S, 2·S} **dla końcowego N = max(N_P, N_B) i końcowych wejść**; moc R w raporcie (dopisek §7.4) pochodzi z tej tabeli (σ planistyczne, nie obserwowane).
 - **Drabina:** N ∈ {30, 45, 60, 90, 120}; najmniejsze N spełniające cel dla wszystkich hipotez; jeśli żadne – N = 120 z raportowaną mocą.
 - **Dwa wyznaczenia:** N_P z pilota (przed tagiem, w `PARAMETRY.json`); N_B z Etapu B i B2 (σ = max(pilot, B) per kontrast i zbiór; dla `BCM` − `PLW` z B-PLW). **N = max(N_P, N_B)**, commit i push przed Etapem C. N tylko w górę; N nie podlega cięciom budżetowym (§8.3).
 
@@ -282,7 +283,7 @@ Słowa zakazane: „dowodzi”, „przełom”, „bezprecedensowy”, „idealn
 - E3: odczyty (a) bez warstwy 0, (b) krzyżowy (§3.3).
 - E4: norma zmiany wag na epokę per warstwa (`CUR`, `ANN`, `STD`; zapis w rekordzie biegu) – czy przełączenie zmienia krok.
 - E5: krajobraz strojenia Etapu A (mapy lr × θ per ramię i zbiór) – **obowiązkowy**.
-- E6: dokładność walidacyjna co epokę (krzywe) dla wszystkich ramion – zapis w rekordzie biegu.
+- E6: dokładność walidacyjna co epokę (krzywe) dla wszystkich ramion – zapis w rekordzie biegu; odczyt formułą końcową ramienia w każdej epoce (dla `CUR`/`REV` także w epokach 1–12). E4 i E6 uśredniają biegi bez NaN (pełne krzywe), z liczbą biegów.
 - E7: `ANN` − `STD` (opisowo, 95% CI HL).
 
 ### 7.9. Skrypt analizy (`final.py`)

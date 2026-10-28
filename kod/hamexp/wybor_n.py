@@ -77,24 +77,32 @@ def collect(results, stage, sel=None):
             if len(Ks) == 2 and ok.sum() > 2:
                 rhos.append(float(np.corrcoef(D[0], D[1])[0, 1]))
             for a in acc:
-                out[h]["q"].setdefault(a, []).append(float(fail[a].mean()))
+                out[h]["q"].setdefault(a, []).append([int(fail[a].sum()), int(len(fail[a]))])
         if rhos:
             out[h]["rho"] = float(np.mean(rhos))
     return out
 
 
 def decide(stats_list):
-    """σ = max over sources (pilot, B) per hypothesis and dataset; q = max (≥ 1 %); ρ capped to [0, 0.5]."""
-    sd, q, rho = {}, {}, 0.0
+    """σ = max over sources (pilot, B) per hypothesis and dataset, × 1.29; q per arm and dataset pooled
+    over sources (failures / runs), minimum 1 %; ρ = min over sources, capped to [0, 0.5]."""
+    sd, q, rho = {}, {}, None
     for h in HYP:
         sd[h] = tuple(1.29 * max(s[h]["sd"][i] for s in stats_list) for i in range(2))
         B, Ks = HYP[h]
-        qq = {a: max(0.01, max(max(s[h]["q"][a]) for s in stats_list)) for a in [B] + Ks}
-        q[h] = {"B": qq[B], **{f"K{i}": qq[k] for i, k in enumerate(Ks)}}
+        q[h] = []
+        for i in range(2):
+            pooled = {}
+            for a in [B] + Ks:
+                f = sum(s[h]["q"][a][i][0] for s in stats_list)
+                n = sum(s[h]["q"][a][i][1] for s in stats_list)
+                pooled[a] = max(0.01, f / n)
+            q[h].append({"B": pooled[B], **{f"K{k}": pooled[c] for k, c in enumerate(Ks)}})
         rs = [s[h]["rho"] for s in stats_list if s[h]["rho"] is not None]
         if rs:
-            rho = min(max(min(rs), 0.0), 0.5)  # lower rho = lower IUT power = conservative
-    return sd, q, rho
+            r = min(max(min(rs), 0.0), 0.5)
+            rho = r if rho is None else min(rho, r)
+    return sd, q, (0.0 if rho is None else rho)
 
 
 def power_table(n, sd, q, rho, reps, seed):
@@ -105,7 +113,7 @@ def power_table(n, sd, q, rho, reps, seed):
             sign = -1 if h == "H4" else 1
             delta = [[sign * mult * S_UNITS] * len(Ks) for _ in range(2)]
             tab[h][name] = A.simulate_joint(n, len(Ks), delta, sd[h], rho if len(Ks) > 1 else 0.0, q[h],
-                                            (S_UNITS, S_UNITS), FAIL_VALUE, BASE, reps, seed)
+                                            (S_UNITS, S_UNITS), FAIL_VALUE, BASE, reps, seed)  # joint + per dataset
     return tab
 
 
@@ -149,8 +157,10 @@ def main(argv=None):
     params[key] = n
     params[f"{key}_inputs"] = {"sd_units_x1.29": sd, "q": q, "rho": rho}
     params[f"{key}_ladder"] = {str(k): v for k, v in tab.items()}
-    params[f"{key}_power_table"] = power_table(n, sd, q, rho, a.reps, seed)
     params["N"] = max(params.get("N_P", 0), params.get("N_B", 0))
+    # power table at the FINAL N with the final (latest, most conservative) inputs (review K1-04)
+    params["N_power_table"] = {"N": params["N"], "inputs_from": key,
+                               "table": power_table(params["N"], sd, q, rho, a.reps, seed)}
     with open(a.params, "w") as f:
         json.dump(params, f, indent=1)
     print(json.dumps({"N": params["N"], key: n, "sd_units_x1.29": sd, "rho": rho, "q": q}, indent=1))

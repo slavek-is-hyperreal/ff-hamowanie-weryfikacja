@@ -72,3 +72,47 @@ def stabilnosc(fB, fKs):
 def klasa(kat):
     return {"GORSZOSC": "G", "GORSZOSC<S": "G", "PRZEWAGA": "P", "PRZEWAGA<S": "P", "ROWNOWAZNOSC+": "R",
             "ROWNOWAZNOSC": "R"}.get(kat, "N")
+
+
+def laczenie(k1, d1, k2, d2):
+    """§7.3 written from the protocol table."""
+    c1, c2 = klasa(k1), klasa(k2)
+    sila = {"GORSZOSC": 2, "PRZEWAGA": 2}
+    if c1 == c2 and c1 != "N":
+        if c1 == "R":
+            return "ROWNOWAZNOSC+" if "ROWNOWAZNOSC+" in (k1, k2) else "ROWNOWAZNOSC"
+        return k1 if sila.get(k1, 1) <= sila.get(k2, 1) else k2
+    if c1 == "N" and c2 == "N":
+        return "NIEROZSTRZYGNIETY"
+    if {c1, c2} == {"P", "G"}:
+        return "NIESPOJNY-KIERUNEK"
+    if (c1 == "P" and k2 == "ROWNOWAZNOSC+" and d2 > 0) or (c2 == "P" and k1 == "ROWNOWAZNOSC+" and d1 > 0):
+        return "NIESPOJNY-ZGODNY-KIERUNEK"
+    if (c1 == "G" and k2 == "ROWNOWAZNOSC+" and d2 < 0) or (c2 == "G" and k1 == "ROWNOWAZNOSC+" and d1 < 0):
+        return "NIESPOJNY-ZGODNY-KIERUNEK"
+    return "NIESPOJNY-CZESCIOWY"
+
+
+def kierunek(D, S):
+    half = A1 / 2
+    if all(p_one(d, "greater") <= half for d in D):
+        return 1
+    if holm([p_one(d, "less") for d in D], half):
+        return -1
+    return 0
+
+
+def werdykt(per_ds):
+    """per_ds: list of (D, S, fB, fKs) for the two datasets. Full path §7.2 (with stability rule) + §7.3."""
+    ks, ds_, st = [], [], []
+    for D, S, fB, fKs in per_ds:
+        k = kategoria([list(d) for d in D], S)
+        s = stabilnosc(list(fB), [list(f) for f in fKs])
+        if klasa(k) == "R" and s != "BRAK":
+            k = "NIEROZSTRZYGNIETY"
+        ks.append(k)
+        ds_.append(kierunek([list(d) for d in D], S))
+        st.append(s)
+    joint = laczenie(ks[0], ds_[0], ks[1], ds_[1])
+    stab = st[0] if st[0] == st[1] and st[0] != "BRAK" else "BEZ WYKAZANEJ RÓŻNICY STABILNOŚCI"
+    return joint, stab

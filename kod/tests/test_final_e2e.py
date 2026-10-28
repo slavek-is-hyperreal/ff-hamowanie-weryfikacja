@@ -48,12 +48,54 @@ def _make(tmp, n_seeds=10):
         json.dump({"id": rid, "val_acc": 90.0 + p}, open(os.path.join(tmp, "A", "zaslepione", rid + ".json"), "w"))
 
 
+def _files(tmp, drop_arm=None):
+    sel = {f"{ds}|{a}": {"point": 0, "cfg": {"lr": 1e-3, "theta": 1.0}} for ds in ("mnist", "fmnist") for a in FF_ARMS + ("BP",)}
+    if drop_arm:
+        sel[drop_arm]["cfg"] = None
+    json.dump(sel, open(os.path.join(tmp, "SEL.json"), "w"))
+    json.dump({"N": 10, "N_power_table": {"table": {"H2": {"0": {"joint": {"R": 0.2}}}}}},
+              open(os.path.join(tmp, "P.json"), "w"))
+
+
+def _args(tmp, out):
+    return ["--results", tmp, "--params", os.path.join(tmp, "P.json"), "--sel", os.path.join(tmp, "SEL.json"),
+            "--out", out, "--boot", "200"]
+
+
+def test_refuses_incomplete_stage_c(tmp_path):
+    import pytest
+    tmp = str(tmp_path)
+    _make(tmp)
+    _files(tmp)
+    os.remove(os.path.join(tmp, "test", "C", "C__mnist__CUR__s63003.pt"))
+    with pytest.raises(SystemExit):
+        final.main(_args(tmp, os.path.join(tmp, "W.json")))
+
+
+def test_untrainable_arm(tmp_path):
+    import shutil
+    tmp = str(tmp_path)
+    _make(tmp)
+    _files(tmp, drop_arm="fmnist|PLW")
+    for f in os.listdir(os.path.join(tmp, "C", "runs")):
+        if "__fmnist__PLW__" in f:
+            rid = f[:-5]
+            for sub, ext in (("runs", ".json"), ("zaslepione", ".json")):
+                os.remove(os.path.join(tmp, "C", sub, rid + ext))
+            os.remove(os.path.join(tmp, "test", "C", rid + ".pt"))
+    out = os.path.join(tmp, "W.json")
+    final.main(_args(tmp, out))
+    rep = json.load(open(out))
+    assert rep["confirmatory"]["H3"]["joint"]["category"] == "NIEROZSTRZYGNIETY"
+    assert "nietrenowalne" in rep["confirmatory"]["H3"]["note"]
+
+
 def test_final_end_to_end(tmp_path):
     tmp = str(tmp_path)
     _make(tmp)
+    _files(tmp)
     out = os.path.join(tmp, "W.json")
-    json.dump({}, open(os.path.join(tmp, "P.json"), "w"))
-    final.main(["--results", tmp, "--params", os.path.join(tmp, "P.json"), "--out", out, "--boot", "200"])
+    final.main(_args(tmp, out))
     rep = json.load(open(out))
     assert set(rep["confirmatory"]) == {"H1", "H2", "H3", "H4"}
     for h in rep["confirmatory"]:
@@ -71,3 +113,11 @@ def test_final_end_to_end(tmp_path):
     for k in ("E1_bcm_theta", "E2_bp_gap", "E3_readouts", "E4_dw_norm", "E5_landscape", "E6_val_curves", "E7_ann_minus_std"):
         assert rep["exploratory"][k]
     assert os.path.exists(os.path.join(tmp, "rysunki", "E6_krzywe_mnist.png"))
+    for k in ("notes_7_4", "H1_x_H2", "boundary_5_5", "versions", "power_final_N"):
+        assert k in rep
+    v = rep["confirmatory"]["H1"]["per_dataset"]["mnist"]
+    for k in ("hl_pp", "hl_ci_pp", "mean_pp", "t_ci_pp", "failures", "stability", "holm_better_comparators_inf_S"):
+        assert k in v
+    b = rep["sensitivity"]["H1"]["a_bootstrap_hl"]["per_dataset"]["mnist"]
+    assert "ci_pp_1-2a" in b and "p" in b
+    assert "per_dataset" in rep["sensitivity"]["H1"]["e_S_0.25"]

@@ -57,11 +57,11 @@
    "info": {}
   },
   {
-   "scenario": "vi_zgodnosc_implementacji",
+   "scenario": "vi_zgodnosc_pelnej_sciezki",
    "ok": true,
    "info": {
     "niezgodne": 0,
-    "z": 300
+    "z": 1000
    }
   },
   {
@@ -90,7 +90,7 @@
    "scenario": "viii_rozmiar_greater_N30",
    "ok": true,
    "info": {
-    "rate": 0.005,
+    "rate": 0.006,
     "limit": 0.009988262882008166
    }
   },
@@ -98,7 +98,7 @@
    "scenario": "viii_rozmiar_less_N30",
    "ok": true,
    "info": {
-    "rate": 0.006,
+    "rate": 0.00575,
     "limit": 0.009988262882008166
    }
   },
@@ -106,7 +106,7 @@
    "scenario": "viii_rozmiar_greater_N120",
    "ok": true,
    "info": {
-    "rate": 0.00525,
+    "rate": 0.00625,
     "limit": 0.009988262882008166
    }
   },
@@ -114,15 +114,63 @@
    "scenario": "viii_rozmiar_less_N120",
    "ok": true,
    "info": {
-    "rate": 0.00575,
+    "rate": 0.00625,
     "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "viii_H3_klasaP_N30",
+   "ok": true,
+   "info": {
+    "rate": 0.0,
+    "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "viii_H3_klasaP_N120",
+   "ok": true,
+   "info": {
+    "rate": 0.0,
+    "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "ix_H3_R_-50_N30",
+   "ok": true,
+   "info": {
+    "rate": 0.0045,
+    "limit": 0.0177700509959582
+   }
+  },
+  {
+   "scenario": "ix_H3_R_50_N30",
+   "ok": true,
+   "info": {
+    "rate": 0.0055,
+    "limit": 0.0177700509959582
+   }
+  },
+  {
+   "scenario": "ix_H3_R_-50_N120",
+   "ok": true,
+   "info": {
+    "rate": 0.01175,
+    "limit": 0.0177700509959582
+   }
+  },
+  {
+   "scenario": "ix_H3_R_50_N120",
+   "ok": true,
+   "info": {
+    "rate": 0.0105,
+    "limit": 0.0177700509959582
    }
   },
   {
    "scenario": "ix_R_na_granicy_-50_N30",
    "ok": true,
    "info": {
-    "rate": 0.0095,
+    "rate": 0.012,
     "limit": 0.0177700509959582
    }
   },
@@ -130,7 +178,7 @@
    "scenario": "ix_R_na_granicy_50_N30",
    "ok": true,
    "info": {
-    "rate": 0.01125,
+    "rate": 0.013,
     "limit": 0.0177700509959582
    }
   },
@@ -138,7 +186,7 @@
    "scenario": "ix_R_na_granicy_-50_N120",
    "ok": true,
    "info": {
-    "rate": 0.0125,
+    "rate": 0.01225,
     "limit": 0.0177700509959582
    }
   },
@@ -146,7 +194,7 @@
    "scenario": "ix_R_na_granicy_50_N120",
    "ok": true,
    "info": {
-    "rate": 0.01325,
+    "rate": 0.0125,
     "limit": 0.0177700509959582
    }
   },
@@ -154,7 +202,7 @@
    "scenario": "x_rozmiar_stabilnosci",
    "ok": true,
    "info": {
-    "rate": 0.00275,
+    "rate": 0.0035,
     "limit": 0.009988262882008166
    }
   },
@@ -190,7 +238,6 @@
     "category": "NIEROZSTRZYGNIETY",
     "class": "N",
     "direction": 0,
-    "class_": "N",
     "stab_blocked": true
    }
   },

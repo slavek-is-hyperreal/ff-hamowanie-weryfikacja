@@ -208,10 +208,11 @@ def plan_b2(results, sel):
     return shuffled(jobs, "B2"), chosen
 
 
-def plan_c(sel, n):
+def plan_c(sel, n, without_bp=False):
+    """§5.7; ``without_bp`` = the only allowed budget cut (§8.3)."""
     jobs = []
     for ds in DATASETS:
-        for arm in FF_ARMS + ("BP",):
+        for arm in FF_ARMS + (() if without_bp else ("BP",)):
             cfg = sel.get(f"{ds}|{arm}", {}).get("cfg")
             if cfg is None:
                 continue  # untrainable arm (§5.6)
@@ -232,6 +233,7 @@ def main(argv=None):
     ap.add_argument("--results")
     ap.add_argument("--out")
     ap.add_argument("--n", type=int)
+    ap.add_argument("--bez-bp", action="store_true", help="§8.3: drop BP from stage C (only allowed cut)")
     ap.add_argument("--sel", default=None, help="path of ETAP_B_WYBOR.json (default: <results>/../ETAP_B_WYBOR.json)")
     a = ap.parse_args(argv)
     sel_path = a.sel or (os.path.join(a.results, "..", "ETAP_B_WYBOR.json") if a.results else None)
@@ -244,44 +246,45 @@ def main(argv=None):
     elif a.stage == "B":
         jobs, chosen = plan_b(a.results)
         _dump(jobs, a.out)
-        print("kandydaci (punkty) do B:", chosen)
+        print("kandydaci do B (numery punktów, posortowane – bez rankingu):", {k: sorted(v) for k, v in chosen.items()})
     elif a.stage == "A2":
+        # candidates recomputed from stage A by the §5.2 rule (not from a directory listing; review K1-11)
+        _, chosen = plan_b(a.results)
         sel = {}
         for ds in DATASETS:
             for arm in TUNED + ("BP",):
                 pts = _a_points(arm)
-                b_points = sorted({int(j.split("__p")[1].split(".")[0]) for j in os.listdir(os.path.join(a.results, "B", "runs"))
-                                   if j.startswith(f"B__{ds}__{arm}__") and j.endswith(".json")})
-                p = select_b(a.results, "B", ds, arm, {q: pts[q] for q in b_points})
+                cands = {q: pts[q] for q in chosen[f"{ds}|{arm}"]}
+                p = select_b(a.results, "B", ds, arm, cands) if cands else None  # missing run files -> hard error
                 sel[f"{ds}|{arm}"] = {"point": p, "cfg": (pts[p] if p is not None else None)}
         jobs = plan_a2(a.results, sel)
         _dump(sel, sel_path)
         _dump(jobs, a.out)
-        print("ETAP_B_WYBOR.json (konfiguracje):", json.dumps(sel))
+        print("ETAP_B_WYBOR.json zapisany (konfiguracje), plan A2:", len(jobs), "biegów")
     elif a.stage == "B2":
         with open(sel_path) as f:
             sel = json.load(f)
         jobs, chosen = plan_b2(a.results, sel)
         _dump(jobs, a.out)
-        print("kandydaci PLW do B2:", chosen)
+        print("kandydaci PLW do B2 (posortowane – bez rankingu):", {k: sorted(v) for k, v in chosen.items()})
     elif a.stage == "SEL":
         with open(sel_path) as f:
             sel = json.load(f)
+        _, chosen = plan_b2(a.results, sel)  # candidates recomputed from A2 by the §5.2 rule
         for ds in DATASETS:
             if "theta_layers" not in sel.get(f"{ds}|PLW", {}):
                 continue
             th = sel[f"{ds}|PLW"]["theta_layers"]
             pts = {i: {"lr": lr, "theta_layers": th} for i, lr in enumerate(lr_grid(16))}
-            b2 = sorted({int(j.split("__p")[1].split(".")[0]) for j in os.listdir(os.path.join(a.results, "B2", "runs"))
-                         if j.startswith(f"B2__{ds}__PLW__") and j.endswith(".json")})
-            p = select_b(a.results, "B2", ds, "PLW", {q: pts[q] for q in b2})
+            cands = {q: pts[q] for q in chosen.get(ds, [])}
+            p = select_b(a.results, "B2", ds, "PLW", cands) if cands else None
             sel[f"{ds}|PLW"].update({"point": p, "cfg": (pts[p] if p is not None else None)})
         _dump(sel, sel_path)
         print("ETAP_B_WYBOR.json zaktualizowany (PLW).")
     elif a.stage == "C":
         with open(sel_path) as f:
             sel = json.load(f)
-        _dump(plan_c(sel, a.n), a.out)
+        _dump(plan_c(sel, a.n, a.bez_bp), a.out)
     else:
         raise SystemExit(f"unknown stage {a.stage}")
 
