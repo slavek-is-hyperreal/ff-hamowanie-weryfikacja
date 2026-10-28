@@ -1,0 +1,10482 @@
+[
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.01
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0003727593720314938
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0026826957952797246
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.005179474679231213
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.008960893828803647,
+   "theta": 0.21232647329845653
+  },
+  "point": "2"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00036009278969055644,
+   "theta": 0.010000834320537418
+  },
+  "point": "12"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.0013894954943731374
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00019306977288832496
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0023921654469769736,
+   "theta": 5.026147980053464
+  },
+  "point": "1"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.00013011274701333573,
+   "theta": 2.3764775460083962
+  },
+  "point": "15"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0004346703234475961,
+   "theta": 0.5845831759446939
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00024214786732251815,
+   "theta": 0.33455527964821197
+  },
+  "point": "8"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007252645686496886,
+   "theta": 0.08243663345508528
+  },
+  "point": "4"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0013327474871570036,
+   "theta": 0.017688754457806797
+  },
+  "point": "6"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0042918664843656276,
+   "theta": 0.027582667410362024
+  },
+  "point": "10"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.00015457431820464483,
+   "theta": 0.041039812762155604
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0001
+  },
+  "point": "0"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 61001,
+  "cfg": {
+   "lr": 0.0007196856730011522
+  },
+  "point": "3"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.002014022294995418,
+   "theta": 0.13759976893767978
+  },
+  "point": "14"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.0015784990805803962,
+   "theta": 0.9739172899496583
+  },
+  "point": "9"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 61002,
+  "cfg": {
+   "lr": 0.0008769294858811373,
+   "theta": 2.8468551378716915
+  },
+  "point": "11"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61004,
+  "cfg": {
+   "lr": 0.0035498148964576786,
+   "theta": 1.5110733824229652
+  },
+  "point": "5"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 61003,
+  "cfg": {
+   "lr": 0.007423988622314998,
+   "theta": 7.823662293636904
+  },
+  "point": "13"
+ },
+ {
+  "stage": "A",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 61005,
+  "cfg": {
+   "lr": 0.00020440420853055515,
+   "theta": 11.619351994709099
+  },
+  "point": "7"
+ }
+]
