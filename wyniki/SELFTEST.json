@@ -1,0 +1,205 @@
+{
+ "ok": true,
+ "results": [
+  {
+   "scenario": "i_wszystkie_P",
+   "ok": true,
+   "info": {
+    "final": "PRZEWAGA",
+    "ref": "PRZEWAGA"
+   }
+  },
+  {
+   "scenario": "ii_R",
+   "ok": true,
+   "info": {
+    "final": "ROWNOWAZNOSC",
+    "ref": "ROWNOWAZNOSC"
+   }
+  },
+  {
+   "scenario": "iii_G_H3_jeden",
+   "ok": true,
+   "info": {
+    "final": "GORSZOSC",
+    "ref": "GORSZOSC"
+   }
+  },
+  {
+   "scenario": "iv_P",
+   "ok": true,
+   "info": {
+    "final": "PRZEWAGA",
+    "ref": "PRZEWAGA"
+   }
+  },
+  {
+   "scenario": "v_G",
+   "ok": true,
+   "info": {
+    "final": "GORSZOSC",
+    "ref": "GORSZOSC"
+   }
+  },
+  {
+   "scenario": "iv_niespojny_kierunek",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "v_niespojny_zgodny",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "xiii_P_R_bez_plus",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "vi_zgodnosc_implementacji",
+   "ok": true,
+   "info": {
+    "niezgodne": 0,
+    "z": 300
+   }
+  },
+  {
+   "scenario": "vec_vs_scipy",
+   "ok": true,
+   "info": {
+    "max_abs": 0.0
+   }
+  },
+  {
+   "scenario": "vii_holm_dwa",
+   "ok": true,
+   "info": [
+    0,
+    1
+   ]
+  },
+  {
+   "scenario": "vii_holm_jeden",
+   "ok": true,
+   "info": [
+    0
+   ]
+  },
+  {
+   "scenario": "viii_rozmiar_greater_N30",
+   "ok": true,
+   "info": {
+    "rate": 0.005,
+    "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "viii_rozmiar_less_N30",
+   "ok": true,
+   "info": {
+    "rate": 0.006,
+    "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "viii_rozmiar_greater_N120",
+   "ok": true,
+   "info": {
+    "rate": 0.00525,
+    "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "viii_rozmiar_less_N120",
+   "ok": true,
+   "info": {
+    "rate": 0.00575,
+    "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "ix_R_na_granicy_-50_N30",
+   "ok": true,
+   "info": {
+    "rate": 0.0095,
+    "limit": 0.0177700509959582
+   }
+  },
+  {
+   "scenario": "ix_R_na_granicy_50_N30",
+   "ok": true,
+   "info": {
+    "rate": 0.01125,
+    "limit": 0.0177700509959582
+   }
+  },
+  {
+   "scenario": "ix_R_na_granicy_-50_N120",
+   "ok": true,
+   "info": {
+    "rate": 0.0125,
+    "limit": 0.0177700509959582
+   }
+  },
+  {
+   "scenario": "ix_R_na_granicy_50_N120",
+   "ok": true,
+   "info": {
+    "rate": 0.01325,
+    "limit": 0.0177700509959582
+   }
+  },
+  {
+   "scenario": "x_rozmiar_stabilnosci",
+   "ok": true,
+   "info": {
+    "rate": 0.00275,
+    "limit": 0.009988262882008166
+   }
+  },
+  {
+   "scenario": "xi_8_0_m1",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "xi_7_0_m1",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "xi_8_0_H3",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "xi_9_0_H3",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "xi_ref_zgodnosc",
+   "ok": true,
+   "info": {}
+  },
+  {
+   "scenario": "xi_R_plus_STAB_daje_N",
+   "ok": true,
+   "info": {
+    "category": "NIEROZSTRZYGNIETY",
+    "class": "N",
+    "direction": 0,
+    "class_": "N",
+    "stab_blocked": true
+   }
+  },
+  {
+   "scenario": "xii_zera_i_S",
+   "ok": true,
+   "info": {
+    "final": "ROWNOWAZNOSC"
+   }
+  }
+ ]
+}

@@ -6,7 +6,17 @@
 | `hamexp/data.py` | §3.2 wejście (L2 + etykieta λ = 0.1), §6 podział, blokada testu |
 | `hamexp/ff.py` | §3.1 sieć FF (jednoczesny trening warstw, Adam per warstwa), §4 harmonogramy ramion, §3.3 odczyty, §3.5 sieć BP |
 | `hamexp/train.py` | §3–§5 pętle treningu, §3.4 NaN, logowanie E1/E4/E6 |
+| `hamexp/runner.py` | §5, §8 wykonanie, zapis atomowy, metryki walidacyjne tylko w `zaslepione/` |
+| `hamexp/plans.py` | §5.1–5.7 plany i reguły wyboru; katalogi etapów: `P`, `A` (5 ramion + BP), `B` (top-3 z A, także BP), `A2`/`B2` (= Etap B2 protokołu dla `PLW`: pula A / pula B), `C` |
+| `hamexp/wybor_n.py` | §7.6 wybór N (tylko SD, ρ, odsetki awarii) |
+| `hamexp/analysis.py` | §7.1–7.3 test Wilcoxona (Pratt), kategorie, Holm, stabilność, łączenie, symulacja |
+| `hamexp/final.py` | §7.4–7.9 zamrożony skrypt analizy (wszystkie pola `RAPORT_SZABLON.md`, rysunki) |
+| `hamexp/selftest.py`, `hamexp/ref_kategorie.py` | §7.9 autotest (i)–(xiii), niezależna implementacja referencyjna |
+| `hamexp/evaluate_test.py` | §5.8 hashe checkpointów i jednorazowa ewaluacja testowa |
+| `hamexp/gpu_check.py` | §8.2 T6 (powtarzalność, niezależność od k), benchmark przepustowości |
+| `hamexp/monitor.py`, `hamexp/sync_verify.py`, `vast/*.sh` | §8 monitor (bez metryk), synchronizacja, wysyłka (dane testowe dopiero `wyslij_test.sh` po pushu hashy) |
 | `tests/test_protokol.py` | §8.2 testy T1–T8 |
+| `tests/test_final_e2e.py` | §7.9 test całego `final.py` na danych syntetycznych |
 | `zrodlo/` | zamrożona kopia kodu źródłowego (commit 9d58048) z `SHA256SUMS` – tylko dla T1 |
 | `sym_nan.py` | symulacja kontrolna obsługi NaN (§3.4) |
 
