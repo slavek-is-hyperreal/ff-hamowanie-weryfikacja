@@ -57,6 +57,7 @@ def _versions(torch):
         except OSError:
             pass
     v["code_commit"] = os.environ.get("HAMEXP_COMMIT", "unknown")
+    v["image"] = os.environ.get("HAMEXP_IMAGE", "unknown")
     return v
 
 

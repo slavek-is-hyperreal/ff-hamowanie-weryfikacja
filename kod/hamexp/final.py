@@ -46,23 +46,24 @@ def load_stage_c(results):
     return out
 
 
-def check_complete(table, sel, n):
-    """Every (dataset, trainable arm) has all N seeds of pool C with a test prediction file (§5.8)."""
+def check_complete(table, sel, n, plan):
+    """Every planned (dataset, arm) has all N seeds of pool C with a test prediction file; arms with cfg None
+    in ETAP_B_WYBOR.json are untrainable (§5.6); BP may be absent from the plan (§8.3 cut; review K2-01)."""
     seeds = set(pool_c(n))
-    untrainable = []
-    for ds in DATASETS:
-        for arm in ALL_ARMS:
-            cfg = sel.get(f"{ds}|{arm}", {}).get("cfg")
-            if cfg is None:
-                untrainable.append((ds, arm))
-                continue
-            have = table.get((ds, arm), {})
-            missing = seeds - set(have)
-            no_test = [s for s, e in have.items() if e["test"] is None]
-            if missing or no_test or set(have) - seeds:
-                raise SystemExit(f"Etap C niekompletny dla {ds}/{arm}: brak {len(missing)}, bez predykcji "
-                                 f"{len(no_test)} – analiza zabroniona (§5.8)")
-    return untrainable
+    planned = {(j["dataset"], j["arm"]) for j in plan}
+    untrainable = [(ds, a) for ds in DATASETS for a in ALL_ARMS if (sel.get(f"{ds}|{a}") or {}).get("cfg") is None]
+    for ds, arm in sorted(planned):
+        have = table.get((ds, arm), {})
+        missing = seeds - set(have)
+        no_test = [s for s, e in have.items() if e["test"] is None]
+        if missing or no_test or set(have) - seeds:
+            raise SystemExit(f"Etap C niekompletny dla {ds}/{arm}: brak {len(missing)}, bez predykcji "
+                             f"{len(no_test)} – analiza zabroniona (§5.8)")
+    extra = set(table) - planned
+    if extra:
+        raise SystemExit(f"biegi spoza planu C: {sorted(extra)}")
+    bp_cut = not any(a == "BP" for _, a in planned)
+    return untrainable, bp_cut
 
 
 def failed(entry):
@@ -87,7 +88,8 @@ def hypothesis(table, h, testset_of, n, untrainable, readout="main", drop_failed
     B, Ks = HYP[h]
     missing = [(ds, a) for ds in DATASETS for a in [B] + Ks if (ds, a) in untrainable]
     if missing:
-        note = ("BCM nietrenowalne" if any(a == "BCM" for _, a in missing)
+        note = ("BCM nietrenowalne (" + ", ".join(ds for ds, a in missing if a == "BCM") + ")"
+                if any(a == "BCM" for _, a in missing)
                 else "ramię nietrenowalne: " + ", ".join(f"{a} ({ds})" for ds, a in missing))
         return {"per_dataset": {}, "joint": {"category": "NIEROZSTRZYGNIETY", "class": "N", "per_dataset": []},
                 "stability_joint": None, "untrainable": missing, "note": note}
@@ -130,7 +132,7 @@ def hypothesis(table, h, testset_of, n, untrainable, readout="main", drop_failed
     return {"per_dataset": per, "joint": joint, "stability_joint": stab_joint}
 
 
-def bootstrap_2d(table, h, n, R=10000, readout="main", chunk=500):
+def bootstrap_2d(table, h, n, R=10000, readout="main", chunk=500, stab=None):
     """§7.7a: seeds resampled with replacement; within each drawn seed, test examples resampled with
     replacement (same indices for all arms). Statistic: HL of per-seed count differences."""
     B, Ks = HYP[h]
@@ -164,25 +166,47 @@ def bootstrap_2d(table, h, n, R=10000, readout="main", chunk=500):
         p = {"sup_S": pf(boot <= S), "sup_0": pf(boot <= 0), "eq_lo": pf(boot <= -S), "eq_hi": pf(boot >= S),
              "inf_S": pf(boot >= -S), "inf_0": pf(boot >= 0)}
         cat, direction, eq = A.categorize({k: list(v) for k, v in p.items()})
-        per[ds] = {"category": cat, "class": A.CLASS_OF[cat], "direction": direction,
-                   "p": {k: v.tolist() for k, v in p.items()},
+        v = {"category": cat, "class": A.CLASS_OF[cat], "direction": direction}
+        if stab and ds in stab:
+            v = A.apply_stability(v, stab[ds])  # same R + STAB → N rule as the main analysis (review K2-08)
+        per[ds] = {**v, "p": {k: v2.tolist() for k, v2 in p.items()},
                    "ci_pp_1-a": (100.0 * np.quantile(boot, [A.ALPHA1 / 2, 1 - A.ALPHA1 / 2], axis=0).T / n_ex).tolist(),
                    "ci_pp_1-2a": (100.0 * np.quantile(boot, [A.ALPHA1, 1 - A.ALPHA1], axis=0).T / n_ex).tolist()}
     return {"per_dataset": per, "joint": A.combine(per["mnist"], per["fmnist"])}
 
 
 # ---------------------------------------------------------------- report sentences inputs (§7.4)
+NIESPOJNE = {
+    "NIESPOJNY-KIERUNEK": "kierunek różnicy przeciwny na obu zbiorach: MNIST: {m}, F-MNIST: {f}",
+    "NIESPOJNY-ZGODNY-KIERUNEK": "na jednym zbiorze kategoria zbiorowa, na drugim różnica istotna statystycznie w tym samym kierunku, praktycznie pomijalna (< S, równoważność wykazana): MNIST: {m}, F-MNIST: {f}",
+    "NIESPOJNY-CZESCIOWY": "na zbiorze MNIST: {m}; na zbiorze F-MNIST: {f}; kategorie należą do różnych klas, więc werdykt łączny jest nierozstrzygnięty",
+}
+STAB_ZD = {"STAB-GORSZA": "ulega awarii treningu istotnie częściej niż", "STAB-LEPSZA": "ulega awarii treningu istotnie rzadziej niż każdy komparator:",
+           "BRAK": "bez wykazanej różnicy stabilności;"}
+
+
 def notes(conf, sens, power):
+    """All mandatory §7.4 notes as sentences (review K2-03)."""
     out = {}
     for h, c in conf.items():
+        B, Ks = HYP[h]
         L = []
         if c.get("note"):
             L.append(c["note"])
+            out[h] = L
+            continue
+        jc = c["joint"]["category"]
+        if jc in NIESPOJNE:
+            L.append(NIESPOJNE[jc].format(m=c["per_dataset"]["mnist"]["category"], f=c["per_dataset"]["fmnist"]["category"]))
         for ds, v in c["per_dataset"].items():
             if "stability" in v:
-                cnt = v["stability"]["counts"]
-                L.append(f"{ds}: awarie {v['failures']} (NaN lub walidacja ≤ 15%); stabilność: {v['stability']['claim']}"
-                         + (f" (gorsza niż {v['stability_worse_than']})" if v["stability_worse_than"] else ""))
+                st = v["stability"]
+                cnt = "; ".join(f"{B} {x['f_B']} vs {k} {x['f_K']} z {v['N']} ziaren" for k, x in zip(Ks, st["counts"]))
+                who = (" " + ", ".join(v["stability_worse_than"])) if st["claim"] == "STAB-GORSZA" else ""
+                L.append(f"{ds}: {B} {STAB_ZD[st['claim']]}{who} ({cnt})")
+                for k, x in zip([B] + Ks, [st["counts"][0]["f_B"]] + [x["f_K"] for x in st["counts"]]):
+                    if x:
+                        L.append(f"{ds}: w ramieniu {k} {x} z {v['N']} biegów uległo awarii (NaN lub ≤ 15% walidacji) i zostało ocenione jako najgorsze")
             if v.get("stab_blocked_R"):
                 L.append(f"{ds}: równoważność dokładności przy istotnie różnej stabilności")
             if v["category"].endswith("<S"):
@@ -193,6 +217,12 @@ def notes(conf, sens, power):
                 L.append(f"{ds}: równoważność w granicach ±0.5 p.p. nie wyklucza efektów rzędu 0.4–0.8 p.p. raportowanych w źródle")
             if v["class"] == "G" and v.get("holm_better_comparators"):
                 L.append(f"{ds}: komparatory istotnie lepsze (Holm): {v['holm_better_comparators']}")
+            tv = sens.get(h, {}).get("b_ttest", {}).get("per_dataset", {}).get(ds)
+            if tv and tv.get("class") != v.get("class"):
+                L.append(f"{ds}: werdykt testu t ({tv['category']}) różni się klasą od testu głównego ({v['category']})"
+                         + (" w obecności awarii" if any(v.get("failures", {}).values()) else ""))
+        if h == "H3":
+            L.append("θ(0) BCM działa praktycznie tylko w pierwszej epoce; strojenie BCM jest bliższe jednowymiarowemu (§4.1)")
         if c["joint"]["class"] == "N" and power:
             pr = power["table"].get(h, {}).get("0", {}).get("joint", {}).get("R")
             if pr is not None and pr < 0.5:
@@ -203,6 +233,7 @@ def notes(conf, sens, power):
             L.append(f"na MNIST werdykt zależy od zbioru testowego: oficjalny {mn['category']} (oglądany w źródle), "
                      f"QMNIST-50k {q['category']} (nieoglądany)")
         out[h] = L
+    out["H1xH2"] = ["macierz H1 × H2 nie zawiera porównania ANN − STD; wnioski o samym wyżarzaniu LR nie są dopuszczalne"]
     return out
 
 
@@ -273,7 +304,7 @@ def exploratory(table, results, n):
         if trs:
             ex["E1_bcm_theta"][ds] = {"mean": np.mean(trs, axis=0).tolist(), "n_runs": len(trs)}
         ffm = {a: np.mean([e["val"] for e in table[(ds, a)].values()]) for a in FF_ARMS if (ds, a) in table}
-        if ffm and (ds, "BP") in table:
+        if ffm and (ds, "BP") in table and table[(ds, "BP")]:
             best = max(ffm, key=ffm.get)
             n_ex = len(table[(ds, best)][seeds[0]]["test"][ds]["main"])
             d = (counts(table, ds, "BP", seeds, ds) - counts(table, ds, best, seeds, ds)) * 100.0 / n_ex
@@ -346,6 +377,8 @@ def main(argv=None):
     ap.add_argument("--results", required=True)
     ap.add_argument("--params", required=True)
     ap.add_argument("--sel", required=True)
+    ap.add_argument("--plan", required=True)
+    ap.add_argument("--hashes", required=True, help="HASHE_CHECKPOINTOW.txt from step 1 of §5.8")
     ap.add_argument("--out", required=True)
     ap.add_argument("--boot", type=int, default=10000)
     a = ap.parse_args(argv)
@@ -354,10 +387,16 @@ def main(argv=None):
     with open(a.sel) as f:
         sel = json.load(f)
     n = int(params["N"])
+    with open(a.plan) as f:
+        plan = json.load(f)
+    # records, validation files and predictions must match the hashes fixed before/after the test (review K2-02)
+    from .evaluate_test import verify, verify_predictions
+    verify(a.results, a.hashes, a.plan)
+    verify_predictions(a.results, a.plan)
     table = load_stage_c(a.results)
-    untrainable = check_complete(table, sel, n)
+    untrainable, bp_cut = check_complete(table, sel, n, plan)
     main_sets = {ds: ds for ds in DATASETS}
-    rep = {"N": n, "untrainable": untrainable, "accuracy": accuracy_table(table), "confirmatory": {}, "sensitivity": {},
+    rep = {"N": n, "untrainable": untrainable, "bp_cut_8_3": bp_cut, "accuracy": accuracy_table(table), "confirmatory": {}, "sensitivity": {},
            "boundary_5_5": boundary(sel), "versions": versions(table), "power_final_N": params.get("N_power_table")}
     for h in HYP:
         conf = hypothesis(table, h, main_sets, n, untrainable)
@@ -368,7 +407,8 @@ def main(argv=None):
         e025 = hypothesis(table, h, main_sets, n, untrainable, s_pp=0.25)
         e10 = hypothesis(table, h, main_sets, n, untrainable, s_pp=1.0)
         rep["sensitivity"][h] = {
-            "a_bootstrap_hl": bootstrap_2d(table, h, n, R=a.boot),
+            "a_bootstrap_hl": bootstrap_2d(table, h, n, R=a.boot,
+                                           stab={d: v["stability"] for d, v in conf["per_dataset"].items() if "stability" in v}),
             "b_ttest": hypothesis(table, h, main_sets, n, untrainable, method="t"),
             "c_qmnist": hypothesis(table, h, {"mnist": "qmnist", "fmnist": "fmnist"}, n, untrainable)["per_dataset"]["mnist"],
             "d_no_failed_pairs": hypothesis(table, h, main_sets, n, untrainable, drop_failed=True),

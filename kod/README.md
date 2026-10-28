@@ -25,3 +25,10 @@
 **Lokalnie (CPU bez AVX2, i5-3450):** uruchamiać z `MKL_CBWR=COMPATIBLE` – bez tego Intel MKL w torch 2.5.1 losowo wybiera jądra AVX-512 (`mkl_vml_kernel_sSqrt_Z0…`, `…sTanh_Z0…`) i proces kończy się SIGILL (zob. `../eksperyment_ff_od_zera/ODSTEPSTWA.md`).
 
 Testy: `cd kod && MKL_CBWR=COMPATIBLE python -m pytest -q tests/`
+
+## Znane słabości (zapisane przed zamrożeniem; recenzje K1/K2)
+
+- T1 porównuje wagi i progi BCM (nie straty), T2 nie sprawdza stanu Adama wprost, T3 sprawdza aktualizację BCM tylko na warstwie 0, T5 jest prosty (K1-20).
+- Agregacja σ (maksimum po źródłach i po dwóch kontrastach H3) i ρ (minimum) w `wybor_n.decide` jest zachowawcza, ale nie wynika z jednej reguły ogólnej (K1-13).
+- Autotest (vi) używa generatora w stylu `sym_nan.py` (różnice normalne + awarie jako klasa 0), nie samego `sym_nan.py`; porównuje pełną ścieżkę `analysis` (bez warstwy wczytywania `final.hypothesis`, którą pokrywa `tests/test_final_e2e.py`).
+- Rekord biegu zawiera nazwę obrazu (`HAMEXP_IMAGE`, ustawiane przez `vast/uruchom.sh`).

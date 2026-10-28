@@ -58,16 +58,18 @@ def main(argv=None):
     # (vi) full path (§7.2 incl. stability rule + §7.3), final implementation vs reference, 1 000 data sets
     #      from the sym_nan.py-style generator (normal differences + failures scored as class 0)
     mism = 0
+    cover = {}
     for t in range(1000):
         n = [30, 60, 120][t % 3]
         m = 1 + (t % 2)
         per_ds = []
         for _ds in range(2):
-            fB = rng.random(n) < rng.choice([0.0, 0.03, 0.15])
+            fB = rng.random(n) < rng.choice([0.0, 0.0, 0.03, 0.15])
             D, fKs = [], []
+            sd = int(rng.choice([20, 40, 90]))
             for _ in range(m):
-                fK = rng.random(n) < rng.choice([0.0, 0.03])
-                d = _d(rng, n, rng.choice([-100, -50, 0, 50, 100]))
+                fK = rng.random(n) < rng.choice([0.0, 0.0, 0.03, 0.25])
+                d = _d(rng, n, rng.choice([-100, -60, -25, 0, 25, 60, 100]), sd)
                 d = np.where(fB & ~fK, FAILV - 9000, np.where(fK & ~fB, 9000 - FAILV, np.where(fB & fK, 0, d)))
                 D.append(d.astype(np.int64))
                 fKs.append(fK)
@@ -78,9 +80,14 @@ def main(argv=None):
             vs.append(v)
             sts.append(st)
         mine = (A.combine(vs[0], vs[1])["category"], A.combine_stability(sts[0], sts[1]))
+        cover[mine[0]] = cover.get(mine[0], 0) + 1
+        for st in sts:
+            cover[st["claim"]] = cover.get(st["claim"], 0) + 1
         if mine != R.werdykt(per_ds):
             mism += 1
-    check("vi_zgodnosc_pelnej_sciezki", mism == 0, {"niezgodne": mism, "z": 1000}, res)
+    check("vi_zgodnosc_pelnej_sciezki", mism == 0, {"niezgodne": mism, "z": 1000, "pokrycie": cover}, res)
+    check("vi_pokrycie_kategorii", all(cover.get(k, 0) > 0 for k in (
+        "ROWNOWAZNOSC+", "NIESPOJNY-ZGODNY-KIERUNEK", "NIESPOJNY-KIERUNEK", "STAB-LEPSZA", "STAB-GORSZA")), cover, res)
 
     # vectorized simulation test vs scipy
     X = np.stack([_d(rng, 45, 20) for _ in range(200)])

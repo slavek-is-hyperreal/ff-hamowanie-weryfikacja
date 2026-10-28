@@ -180,14 +180,21 @@ def test_T7_pipeline_with_nan(tmp_path, monkeypatch):
 
     def fake_load(dataset, part):
         if (dataset, part) in data.TEST_PARTS:
-            n = 200
-            return torch.rand(n, 784), torch.randint(0, 10, (n,))
+            g = torch.Generator().manual_seed(5)
+            return torch.rand(200, 784, generator=g), torch.randint(0, 10, (200,), generator=g)
         return real_load(dataset, part)
     monkeypatch.setattr(data, "load", fake_load)
     assert evaluate_test.evaluate(out, h, "cpu", plan) == 2
     res_nan = torch.load(os.path.join(out, "test", "C", runner.job_id(jobs[1]) + ".pt"), weights_only=False)
     assert set(res_nan) == {"mnist", "qmnist"} and set(res_nan["mnist"]) == {"main", "no_l0", "cross"}
-    assert evaluate_test.verify_predictions(out)
+    _, y_fake = fake_load("mnist", "test")
+    assert torch.equal(res_nan["mnist"]["main"], y_fake == 0)  # class-0 prediction for the NaN run (§3.4)
+    assert evaluate_test.verify_predictions(out, plan)
+    rp = os.path.join(out, "C", "runs", runner.job_id(jobs[1]) + ".json")
+    r = json.load(open(rp)); r["nan"] = False; json.dump(r, open(rp, "w"))
+    with pytest.raises(SystemExit):
+        evaluate_test.verify(out, h, plan)  # tampered NaN record is refused
+    r["nan"] = True; json.dump(r, open(rp, "w"), indent=1)
     os.remove(os.path.join(out, "C", "runs", runner.job_id(jobs[0]) + ".json"))
     with pytest.raises(SystemExit):
         evaluate_test.verify(out, h, plan)

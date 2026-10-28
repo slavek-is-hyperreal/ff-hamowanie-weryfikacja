@@ -80,6 +80,9 @@ def verify(results, hashes_path, plan_path):
     listed = {os.path.basename(k)[:-3] for k in ck} | set(nan)
     if listed != ids:
         raise SystemExit("plik hashy nie odpowiada dokładnie zbiorowi biegów Etapu C")
+    need_files = {os.path.join("C", sub, i + ".json") for i in ids for sub in ("runs", "zaslepione")}
+    if set(files) != need_files:
+        raise SystemExit("plik hashy nie zawiera dokładnie wpisów FILE dla wszystkich rekordów i plików zaslepione Etapu C")
     for rel, d in files.items():
         if sha256(os.path.join(results, rel)) != d:
             raise SystemExit(f"hash mismatch: {rel}")
@@ -147,14 +150,22 @@ def evaluate(results, hashes_path, device, plan_path):
     return len(runs)
 
 
-def verify_predictions(results):
-    """Run locally after download: every prediction file matches HASHE_PREDYKCJI.txt."""
+def verify_predictions(results, plan_path=None):
+    """Run locally after download: every prediction file matches HASHE_PREDYKCJI.txt and (with a plan)
+    the set of prediction files equals the set of planned stage-C runs."""
+    listed = set()
     with open(os.path.join(results, "HASHE_PREDYKCJI.txt")) as f:
         for line in f:
             if line.strip():
                 d, rel = line.split()
-                if sha256(os.path.join(results, rel)) != d:
+                listed.add(rel)
+                if not os.path.exists(os.path.join(results, rel)) or sha256(os.path.join(results, rel)) != d:
                     raise SystemExit(f"prediction hash mismatch: {rel}")
+    if plan_path:
+        with open(plan_path) as f:
+            want = {os.path.join("test", "C", job_id(j) + ".pt") for j in json.load(f)}
+        if listed != want:
+            raise SystemExit("zbiór plików predykcji nie odpowiada planowi Etapu C")
     return True
 
 
@@ -171,7 +182,7 @@ def main(argv=None):
         print(f"{write_hashes(a.results, a.hashes, a.plan)} runs hashed -> {a.hashes}")
         return
     if a.verify_predictions:
-        verify_predictions(a.results)
+        verify_predictions(a.results, a.plan)
         print("predykcje zgodne z HASHE_PREDYKCJI.txt")
         return
     from .runner import setup_torch

@@ -25,7 +25,7 @@ def _make(tmp, n_seeds=10):
                 for sub in ("runs", "zaslepione"):
                     os.makedirs(os.path.join(tmp, "C", sub), exist_ok=True)
                 rec = {"id": rid, "job": {"stage": "C", "kind": "bp" if arm == "BP" else "ff", "dataset": ds, "arm": arm,
-                                          "seed": 63001 + s, "cfg": {}},
+                                          "seed": 63001 + s, "cfg": {}}, "ckpt_sha256": None,
                        "nan": nan, "bcm_theta": [[2.0 + l for l in range(10)]] * 25 if arm == "BCM" else [],
                        "dw_norm": [[0.1] * 10] * 25}
                 json.dump(rec, open(os.path.join(tmp, "C", "runs", rid + ".json"), "w"))
@@ -57,9 +57,29 @@ def _files(tmp, drop_arm=None):
               open(os.path.join(tmp, "P.json"), "w"))
 
 
+def _seal(tmp, skip=lambda rid: False):
+    """Plan of stage C, step-1 hash file and HASHE_PREDYKCJI.txt for the synthetic directory."""
+    from hamexp import evaluate_test, runner
+    jobs = []
+    for f in sorted(os.listdir(os.path.join(tmp, "C", "runs"))):
+        r = json.load(open(os.path.join(tmp, "C", "runs", f)))
+        jobs.append(r["job"])
+        if not r["nan"]:
+            ck = os.path.join(tmp, "C", "ckpt", r["id"] + ".pt")
+            os.makedirs(os.path.dirname(ck), exist_ok=True)
+            torch.save({"x": r["id"]}, ck)
+            r["ckpt_sha256"] = runner.sha256(ck)
+            json.dump(r, open(os.path.join(tmp, "C", "runs", f), "w"))
+    json.dump(jobs, open(os.path.join(tmp, "C.json"), "w"))
+    evaluate_test.write_hashes(tmp, os.path.join(tmp, "H.txt"), os.path.join(tmp, "C.json"))
+    preds = sorted(os.listdir(os.path.join(tmp, "test", "C")))
+    with open(os.path.join(tmp, "HASHE_PREDYKCJI.txt"), "w") as fo:
+        fo.write("\n".join(f"{runner.sha256(os.path.join(tmp, 'test', 'C', p))}  test/C/{p}" for p in preds) + "\n")
+
+
 def _args(tmp, out):
     return ["--results", tmp, "--params", os.path.join(tmp, "P.json"), "--sel", os.path.join(tmp, "SEL.json"),
-            "--out", out, "--boot", "200"]
+            "--plan", os.path.join(tmp, "C.json"), "--hashes", os.path.join(tmp, "H.txt"), "--out", out, "--boot", "200"]
 
 
 def test_refuses_incomplete_stage_c(tmp_path):
@@ -67,6 +87,7 @@ def test_refuses_incomplete_stage_c(tmp_path):
     tmp = str(tmp_path)
     _make(tmp)
     _files(tmp)
+    _seal(tmp)
     os.remove(os.path.join(tmp, "test", "C", "C__mnist__CUR__s63003.pt"))
     with pytest.raises(SystemExit):
         final.main(_args(tmp, os.path.join(tmp, "W.json")))
@@ -83,6 +104,7 @@ def test_untrainable_arm(tmp_path):
             for sub, ext in (("runs", ".json"), ("zaslepione", ".json")):
                 os.remove(os.path.join(tmp, "C", sub, rid + ext))
             os.remove(os.path.join(tmp, "test", "C", rid + ".pt"))
+    _seal(tmp)
     out = os.path.join(tmp, "W.json")
     final.main(_args(tmp, out))
     rep = json.load(open(out))
@@ -90,10 +112,33 @@ def test_untrainable_arm(tmp_path):
     assert "nietrenowalne" in rep["confirmatory"]["H3"]["note"]
 
 
+def test_bp_cut_and_tampering(tmp_path):
+    """§8.3 cut (no BP in plan) must not block the analysis (K2-01); a tampered validation file is refused (K2-02)."""
+    import pytest
+    tmp = str(tmp_path)
+    _make(tmp)
+    _files(tmp)
+    for f in os.listdir(os.path.join(tmp, "C", "runs")):
+        if "__BP__" in f:
+            rid = f[:-5]
+            os.remove(os.path.join(tmp, "C", "runs", f))
+            os.remove(os.path.join(tmp, "C", "zaslepione", rid + ".json"))
+            os.remove(os.path.join(tmp, "test", "C", rid + ".pt"))
+    _seal(tmp)
+    out = os.path.join(tmp, "W.json")
+    final.main(_args(tmp, out))
+    assert json.load(open(out))["bp_cut_8_3"] is True
+    zp = os.path.join(tmp, "C", "zaslepione", "C__mnist__CUR__s63001.json")
+    z = json.load(open(zp)); z["val_acc"] = 5.0; json.dump(z, open(zp, "w"))
+    with pytest.raises(SystemExit):
+        final.main(_args(tmp, out))
+
+
 def test_final_end_to_end(tmp_path):
     tmp = str(tmp_path)
     _make(tmp)
     _files(tmp)
+    _seal(tmp)
     out = os.path.join(tmp, "W.json")
     final.main(_args(tmp, out))
     rep = json.load(open(out))
@@ -115,6 +160,8 @@ def test_final_end_to_end(tmp_path):
     assert os.path.exists(os.path.join(tmp, "rysunki", "E6_krzywe_mnist.png"))
     for k in ("notes_7_4", "H1_x_H2", "boundary_5_5", "versions", "power_final_N"):
         assert k in rep
+    assert any("θ(0) BCM" in x for x in rep["notes_7_4"]["H3"])
+    assert any("awarii" in x for x in rep["notes_7_4"]["H4"])
     v = rep["confirmatory"]["H1"]["per_dataset"]["mnist"]
     for k in ("hl_pp", "hl_ci_pp", "mean_pp", "t_ci_pp", "failures", "stability", "holm_better_comparators_inf_S"):
         assert k in v

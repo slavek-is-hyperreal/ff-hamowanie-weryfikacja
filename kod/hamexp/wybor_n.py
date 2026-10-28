@@ -63,9 +63,14 @@ def run_costs(results, stage, price_usd_h, k):
 
 
 def collect(results, stage, sel=None):
+    """Hypotheses with an untrainable arm (§5.6; cfg None in ETAP_B_WYBOR.json) are skipped (review K2-04)."""
     seeds = POOL_P if stage == "P" else POOL_B
     out = {}
     for h, (B, Ks) in HYP.items():
+        if sel is not None and any((sel.get(f"{ds}|{a}") or {}).get("cfg") is None
+                                   for ds in DATASETS for a in [B] + Ks):
+            out[h] = None
+            continue
         out[h] = {"sd": [], "rho": None, "q": {}}
         rhos = []
         for ds in DATASETS:
@@ -88,6 +93,11 @@ def decide(stats_list):
     over sources (failures / runs), minimum 1 %; ρ = min over sources, capped to [0, 0.5]."""
     sd, q, rho = {}, {}, None
     for h in HYP:
+        if any(s.get(h) is None for s in stats_list):
+            continue  # hypothesis with an untrainable arm: no power target (§5.6)
+        vals = [s[h]["sd"][i] for s in stats_list for i in range(2)]
+        if any(not np.isfinite(v) for v in vals):
+            raise SystemExit(f"σ_d nieskończone/NaN dla {h} (za mało par bez awarii) – decyzja autora wymagana (§5.6)")
         sd[h] = tuple(1.29 * max(s[h]["sd"][i] for s in stats_list) for i in range(2))
         B, Ks = HYP[h]
         q[h] = []
@@ -98,7 +108,7 @@ def decide(stats_list):
                 n = sum(s[h]["q"][a][i][1] for s in stats_list)
                 pooled[a] = max(0.01, f / n)
             q[h].append({"B": pooled[B], **{f"K{k}": pooled[c] for k, c in enumerate(Ks)}})
-        rs = [s[h]["rho"] for s in stats_list if s[h]["rho"] is not None]
+        rs = [s[h]["rho"] for s in stats_list if s.get(h) and s[h]["rho"] is not None]
         if rs:
             r = min(max(min(rs), 0.0), 0.5)
             rho = r if rho is None else min(rho, r)
@@ -108,6 +118,8 @@ def decide(stats_list):
 def power_table(n, sd, q, rho, reps, seed):
     tab = {}
     for h, (B, Ks) in HYP.items():
+        if h not in sd:
+            continue
         tab[h] = {}
         for mult, name in ((0, "0"), (1, "S"), (1.5, "1.5S"), (2, "2S")):
             sign = -1 if h == "H4" else 1
@@ -146,7 +158,7 @@ def main(argv=None):
         json.dump({"zrodlo": a.zrodlo, "stats": st, "koszty": run_costs(a.results, a.zrodlo, a.cena_usd_h, a.k),
                    "n_plikow_wejsciowych": n_hashed}, f, indent=1)
     sd, q, rho = decide(sources)
-    m_by_h = {h: len(HYP[h][1]) for h in HYP}
+    m_by_h = {h: len(HYP[h][1]) for h in HYP if h in sd}
     n, tab = A.choose_n(sd, rho, q, (S_UNITS, S_UNITS), FAIL_VALUE, BASE, (TARGET, TARGET), m_by_h,
                         reps=a.reps, seed=seed)
     params = {}

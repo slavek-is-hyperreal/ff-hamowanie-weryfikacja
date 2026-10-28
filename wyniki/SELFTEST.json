@@ -61,7 +61,41 @@
    "ok": true,
    "info": {
     "niezgodne": 0,
-    "z": 1000
+    "z": 1000,
+    "pokrycie": {
+     "NIESPOJNY-CZESCIOWY": 489,
+     "BRAK": 1588,
+     "STAB-GORSZA": 212,
+     "STAB-LEPSZA": 200,
+     "NIESPOJNY-KIERUNEK": 146,
+     "GORSZOSC<S": 107,
+     "GORSZOSC": 51,
+     "ROWNOWAZNOSC+": 19,
+     "PRZEWAGA": 13,
+     "PRZEWAGA<S": 43,
+     "NIEROZSTRZYGNIETY": 74,
+     "NIESPOJNY-ZGODNY-KIERUNEK": 48,
+     "ROWNOWAZNOSC": 10
+    }
+   }
+  },
+  {
+   "scenario": "vi_pokrycie_kategorii",
+   "ok": true,
+   "info": {
+    "NIESPOJNY-CZESCIOWY": 489,
+    "BRAK": 1588,
+    "STAB-GORSZA": 212,
+    "STAB-LEPSZA": 200,
+    "NIESPOJNY-KIERUNEK": 146,
+    "GORSZOSC<S": 107,
+    "GORSZOSC": 51,
+    "ROWNOWAZNOSC+": 19,
+    "PRZEWAGA": 13,
+    "PRZEWAGA<S": 43,
+    "NIEROZSTRZYGNIETY": 74,
+    "NIESPOJNY-ZGODNY-KIERUNEK": 48,
+    "ROWNOWAZNOSC": 10
    }
   },
   {
@@ -75,8 +109,8 @@
    "scenario": "vii_holm_dwa",
    "ok": true,
    "info": [
-    0,
-    1
+    1,
+    0
    ]
   },
   {
@@ -90,7 +124,7 @@
    "scenario": "viii_rozmiar_greater_N30",
    "ok": true,
    "info": {
-    "rate": 0.006,
+    "rate": 0.004,
     "limit": 0.009988262882008166
    }
   },
@@ -98,7 +132,7 @@
    "scenario": "viii_rozmiar_less_N30",
    "ok": true,
    "info": {
-    "rate": 0.00575,
+    "rate": 0.0045,
     "limit": 0.009988262882008166
    }
   },
@@ -106,7 +140,7 @@
    "scenario": "viii_rozmiar_greater_N120",
    "ok": true,
    "info": {
-    "rate": 0.00625,
+    "rate": 0.007,
     "limit": 0.009988262882008166
    }
   },
@@ -114,7 +148,7 @@
    "scenario": "viii_rozmiar_less_N120",
    "ok": true,
    "info": {
-    "rate": 0.00625,
+    "rate": 0.00475,
     "limit": 0.009988262882008166
    }
   },
@@ -138,7 +172,7 @@
    "scenario": "ix_H3_R_-50_N30",
    "ok": true,
    "info": {
-    "rate": 0.0045,
+    "rate": 0.0065,
     "limit": 0.0177700509959582
    }
   },
@@ -146,7 +180,7 @@
    "scenario": "ix_H3_R_50_N30",
    "ok": true,
    "info": {
-    "rate": 0.0055,
+    "rate": 0.00425,
     "limit": 0.0177700509959582
    }
   },
@@ -154,7 +188,7 @@
    "scenario": "ix_H3_R_-50_N120",
    "ok": true,
    "info": {
-    "rate": 0.01175,
+    "rate": 0.01625,
     "limit": 0.0177700509959582
    }
   },
@@ -162,7 +196,7 @@
    "scenario": "ix_H3_R_50_N120",
    "ok": true,
    "info": {
-    "rate": 0.0105,
+    "rate": 0.012,
     "limit": 0.0177700509959582
    }
   },
@@ -170,7 +204,7 @@
    "scenario": "ix_R_na_granicy_-50_N30",
    "ok": true,
    "info": {
-    "rate": 0.012,
+    "rate": 0.01175,
     "limit": 0.0177700509959582
    }
   },
@@ -178,7 +212,7 @@
    "scenario": "ix_R_na_granicy_50_N30",
    "ok": true,
    "info": {
-    "rate": 0.013,
+    "rate": 0.0115,
     "limit": 0.0177700509959582
    }
   },
@@ -186,7 +220,7 @@
    "scenario": "ix_R_na_granicy_-50_N120",
    "ok": true,
    "info": {
-    "rate": 0.01225,
+    "rate": 0.00925,
     "limit": 0.0177700509959582
    }
   },
@@ -194,7 +228,7 @@
    "scenario": "ix_R_na_granicy_50_N120",
    "ok": true,
    "info": {
-    "rate": 0.0125,
+    "rate": 0.013,
     "limit": 0.0177700509959582
    }
   },
@@ -202,7 +236,7 @@
    "scenario": "x_rozmiar_stabilnosci",
    "ok": true,
    "info": {
-    "rate": 0.0035,
+    "rate": 0.00225,
     "limit": 0.009988262882008166
    }
   },
