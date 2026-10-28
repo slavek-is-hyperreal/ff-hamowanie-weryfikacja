@@ -327,9 +327,10 @@ def simulate_joint(n, m, delta_units, sd_units, rho, q, S, fail_value, base, rep
     return {"joint": rate(out), "per_dataset": [rate(c1), rate(c2)], "stab_worse": stab}
 
 
-def choose_n(sd_units, rho, q, S, fail_value, base, target_delta_units, m_by_h, ladder=(30, 45, 60, 90, 120),
+def choose_n(sd_units, rho, q, S, fail_value, base, target_delta_units, m_by_h,
+             ladder=(30, 45, 60, 90, 120, 150, 200, 250, 300, 400),
              reps=10000, seed=None):
-    """§7.6: smallest N on the ladder meeting power targets for all hypotheses, else 120.
+    """§7.6 (ladder D5): smallest N on the ladder meeting power targets for all hypotheses, else 400.
     sd_units: {h: (sd_mnist, sd_fmnist)}; q: {h: [ {'B':..,'K0':..} per dataset ]}; m_by_h: {h: m}.
     Target: joint P for H1–H3 at +target, joint G for H4 at −target; >= 0.8."""
     from .streams import seed_from

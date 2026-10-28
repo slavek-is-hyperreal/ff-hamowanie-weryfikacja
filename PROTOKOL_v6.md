@@ -1,6 +1,6 @@
 # Protokół v6: curriculum hamowania i próg BCM w Forward-Forward – sprawdzenie konfirmacyjne
 
-> **Wersja do zamrożenia** (tag `hamowanie-prereg` po pilocie, §9).
+> **Wersja zamrożona** – tag `hamowanie-prereg` (2026-10-28). Zmiany po tagu: `ODSTEPSTWA.md`.
 
 Autor: Sławomir Majcher. Wersja po recenzjach R1–R5 (`recenzje/`, odpowiedzi `odpowiedzi/O1.md`–`O5.md`). Decyzje: `DECYZJE_AUTORA.md` (D1–D4). Audyt źródła: `00_AUDYT.md`. Protokół jest **samowystarczalny**: wszystkie liczby, reguły i zdania raportu są tutaj; odwołania do `../eksperyment_ff_od_zera/PROTOKOL_v5.md` („FF-v5”) wskazują wyłącznie pochodzenie mechaniki.
 
@@ -156,7 +156,7 @@ Jeśli wybrana konfiguracja któregokolwiek ramienia leży w skrajnych 10% zakre
   - `init`: (s, 4)
   - **Bez indeksu warstwy** (warstwy uczą się jednocześnie na tej samej partii). `BP` używa `order` (s, 2, epoka), `init` (s, 4).
 - Strumienie są identyczne dla wszystkich ramion przy danym ziarnie (parowanie).
-- Pule ziaren (rozłączne, nowe względem źródła): P 60001–60010, A 61001–61005, B 62001–62010, C 63001–(63000 + N).
+- Pule ziaren (rozłączne, nowe względem źródła): P 60001–60010, A 61001–61005, B 62001–62010, C 63001–(63000 + N), N ≤ 400.
 - Dane: pliki źródłowe z oficjalnych źródeł, hashe w `dane/SHA256SUMS` (weryfikowane przy każdym wczytaniu).
 - Pozostałe ziarna: punkty Sobola – `seed_from("A-sobol") mod 2³¹`; bootstrap (§7.7a) – `seed_from("bootstrap", H)`; symulacja N – `seed_from("choose_n")`; autotest – `seed_from("autotest")`.
 - Determinizm: `CUBLAS_WORKSPACE_CONFIG=:4096:8`, `torch.use_deterministic_algorithms(True)`, float32, TF32 wyłączone, `torch.set_num_threads(1)` na proces; wersje: obraz `pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime` (torch 2.5.1, Python 3.11) – zapisywane w każdym rekordzie biegu.
@@ -271,7 +271,7 @@ Słowa zakazane: „dowodzi”, „przełom”, „bezprecedensowy”, „idealn
   - H4: P(łączna klasa G) ≥ 0.8 przy Δ = −0.75 p.p. na obu zbiorach;
   - moc równoważności (klasa R przy Δ = 0) raportowana, bez wymogu;
   - `PARAMETRY.json` zawiera tabelę mocy (klasy P, R, G; łącznie i per zbiór; P(STAB-GORSZA)) przy Δ ∈ {0, S, 1.5·S, 2·S} **dla końcowego N = max(N_P, N_B) i końcowych wejść**; moc R w raporcie (dopisek §7.4) pochodzi z tej tabeli (σ planistyczne, nie obserwowane).
-- **Drabina:** N ∈ {30, 45, 60, 90, 120}; najmniejsze N spełniające cel dla wszystkich hipotez; jeśli żadne – N = 120 z raportowaną mocą.
+- **Drabina (D5):** N ∈ {30, 45, 60, 90, 120, 150, 200, 250, 300, 400}; najmniejsze N spełniające cel dla wszystkich hipotez; jeśli żadne – N = 400 z raportowaną mocą.
 - **Dwa wyznaczenia:** N_P z pilota (przed tagiem, w `PARAMETRY.json`); N_B z Etapu B i B2 (σ = max(pilot, B) per kontrast i zbiór; dla `BCM` − `PLW` z B-PLW). **N = max(N_P, N_B)**, commit i push przed Etapem C. N tylko w górę; N nie podlega cięciom budżetowym (§8.3).
 
 ### 7.7. Analizy wrażliwości
@@ -314,7 +314,7 @@ Runner, zapis atomowy, synchronizacja z weryfikacją hashy, monitor, ewaluacja i
   - B: 5 ramion × 3 × 10 × 2 = 300; B-BP: 3 × 10 × 2 = 60;
   - B2 (`PLW`): 16 × 5 × 2 + 3 × 10 × 2 = 220;
   - razem przed C: 1 600;
-  - C: 7 ramion × N × 2 = 420 (N = 30) … 1 680 (N = 120).
+  - C: 7 ramion × N × 2 = 420 (N = 30) … 5 600 (N = 400).
 - Koszt biegu (z logowaniem E1/E4/E6) mierzony w pilocie; pod-limity: P + A + B + B2 ≤ 4 USD; C ≤ 5 USD; rezerwa 0.8 USD na ewaluację, powtórki po błędzie kodu i awarie.
 - **Prognoza przed Etapem C:** koszt C = (średni koszt biegu w Etapie B; przy zmianie typu GPU między B a C – koszt zmierzony w benchmarku/T6 na nowym typie) × 14·N. Jeśli prognoza > (pozostałe środki − 0.8 USD): `BP` usuwane z Etapu C (jedyne dopuszczalne cięcie; prognoza 12·N). Jeśli nadal za mało: wstrzymanie; zwiększenie limitu wymaga zmiany D3 przez autora i wpisu w `ODSTEPSTWA.md` przed Etapem C. N nie jest cięte.
 - Przekroczenie pod-limitu w trakcie etapu → wstrzymanie i decyzja autora (j.w.).

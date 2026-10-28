@@ -1,0 +1,33 @@
+{
+ "id": "P__fmnist__BP__s60001",
+ "job": {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ "nan": false,
+ "nan_epoch": null,
+ "epochs_run": 25,
+ "train_time_sec": 61.58866572380066,
+ "wall_time_sec": 61.84710717201233,
+ "bcm_theta": [],
+ "dw_norm": [],
+ "versions": {
+  "python": "3.11.10",
+  "torch": "2.5.1+cu124",
+  "host": "eb852b353197",
+  "tf32": false,
+  "MKL_CBWR": "COMPATIBLE",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "driver": "570.133.20",
+  "code_commit": "98aeee882e3895559042f85fc1e9a561dae2f319",
+  "image": "pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime"
+ },
+ "ckpt_sha256": null
+}
