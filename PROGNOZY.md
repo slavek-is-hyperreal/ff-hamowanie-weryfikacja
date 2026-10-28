@@ -17,4 +17,4 @@ Format: kategoria per zbiór → łącznie; „HL” – oczekiwana pseudomedian
 
 ## Autor (Sławek)
 
-{do wpisania przez autora przed pilotem; jeśli autor nie poda – „brak prognozy autora”}
+Brak własnej prognozy autora. Autor (2026-10-28): „wpisz swoją prognozę” – polecił zarejestrować wyłącznie prognozę asystenta (powyżej).

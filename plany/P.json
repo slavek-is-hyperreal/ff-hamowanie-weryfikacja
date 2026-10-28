@@ -1,0 +1,1302 @@
+[
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "STD",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "REV",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "ANN",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "fmnist",
+  "arm": "BP",
+  "seed": 60006,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60001,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60004,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "REV",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60010,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "CUR",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60007,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "CUR",
+  "seed": 60005,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60009,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60008,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "bp",
+  "dataset": "mnist",
+  "arm": "BP",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "STD",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "ANN",
+  "seed": 60002,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "mnist",
+  "arm": "BCM",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ },
+ {
+  "stage": "P",
+  "kind": "ff",
+  "dataset": "fmnist",
+  "arm": "BCM",
+  "seed": 60003,
+  "cfg": {
+   "lr": 0.001,
+   "theta": 2.0
+  }
+ }
+]

@@ -27,7 +27,7 @@ def _run(args):
     tr, va = sp.train_idx.to(device), sp.val_idx.to(device)
     job = {"seed": seed, "arm": "BCM", "cfg": {"lr": 1e-3, "theta": 2.0}}
     t = time.time()
-    rec, net = train.train_ff(job, xn[tr], y[tr], xn[va], y[va], device, epochs=epochs, log_val=(epochs == 25))
+    rec, net = train.train_ff(job, xn[tr], y[tr], xn[va], y[va], device, epochs=epochs, log_val=True)
     pred = ff.predict(net, xn[va], data.encode, "BCM")["main"].cpu()
     return {"sec": time.time() - t, "pred": pred.tolist(), "w0": net.layers[0].weight.detach().cpu().sum().item()}
 
@@ -47,19 +47,21 @@ def determinism_ok(device="cuda"):
     return all(r.values())
 
 
-def throughput(device, k_list):
+def throughput(device, k_list, epochs=3):
+    """Short runs (``epochs``, validation every epoch) extrapolated linearly to 25 epochs."""
     out = {}
     ctx = mp.get_context("spawn")
     for k in k_list:
         t = time.time()
         try:
             with ctx.Pool(k) as pool:
-                per = pool.map(_run, [(device, SMOKE_SEED + 100 + i, 25) for i in range(k)])
+                per = pool.map(_run, [(device, SMOKE_SEED + 100 + i, epochs) for i in range(k)])
         except Exception as e:
             out[k] = {"error": type(e).__name__}
             break
-        wall = time.time() - t
-        out[k] = {"wall_sec": wall, "runs_per_hour": 3600.0 * k / wall, "mean_run_sec": sum(p["sec"] for p in per) / k}
+        wall = (time.time() - t) * 25.0 / epochs
+        out[k] = {"wall_sec_25ep_est": wall, "runs_per_hour_est": 3600.0 * k / wall,
+                  "mean_run_sec_25ep_est": sum(p["sec"] for p in per) / k * 25.0 / epochs}
     return out
 
 
