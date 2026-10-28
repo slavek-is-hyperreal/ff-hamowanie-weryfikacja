@@ -1,0 +1,4 @@
+# Dziennik techniczny (przed zamrożeniem)
+
+- **2026-10-28, test dymny runnera (lokalnie, CPU).** Uruchomiono 2 zadania z planu pilota (`P__mnist__CUR__s60009`, `P__mnist__BCM__s60007`, konfiguracja pilota lr = 1e-3, θ = 2) do katalogu tymczasowego, żeby sprawdzić runner. Czas biegu ok. 190 s (CPU, z walidacją co epokę). **Przez nieuwagę wypisano zawartość `zaslepione/` jednego biegu** (krzywa walidacyjna `CUR` MNIST, końcowo ok. 90%), czyli metrykę pilota spoza skryptu `choose_n` (§5.1, §7.6). Wpływ: jedna wartość jednego ramienia na walidacji pilota; nie dotyczy kontrastów ani Etapów A–C. Biegi tymczasowe usunięte; pilot zostanie policzony od nowa na Vast. Od teraz testy dymne wyłącznie na ziarnach spoza pul (69001+).
+- Obserwacja z rekordu biegu (nie metryka): końcowe progi BCM w tym biegu: warstwa 0 ok. 6.8, warstwy ukryte ok. 1.9–5.7 – asymetria progów między warstwami pozostaje mimo normalizacji wejścia (przedmiot E1).
