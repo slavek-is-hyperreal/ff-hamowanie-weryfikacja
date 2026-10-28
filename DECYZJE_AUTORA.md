@@ -20,4 +20,4 @@ Konsekwencja zapisana wprost: badanie testuje **metodę w poprawionym układzie*
 
 Kod i ustawienia przenoszone z `/my_data/VectorLegis/eksperymenty/forward_forward/potwierdzenie_30_ziaren/` (commit `9d58048` repozytorium `eksperymenty`). Kod kopiowany, nie importowany; katalog źródłowy pozostaje nietknięty.
 
-**D4. Publiczne repozytorium GitHub jako znacznik czasu – decyzja oczekuje.** Do zamrożenia (§9 protokołu) potrzebna zgoda autora na utworzenie publicznego repozytorium (subtree split wyłącznie tego folderu). Bez zgody: tag lokalny i zastrzeżenie w raporcie.
+**D4 (2026-10-28). Publiczne repozytorium GitHub jako znacznik czasu: TAK.** Autor zgodził się na nowe publiczne repozytorium (subtree split wyłącznie folderu `eksperyment_hamowanie_od_zera/`). Doładowanie salda Vast – autor zostanie powiadomiony, gdy będzie potrzebne (D3).

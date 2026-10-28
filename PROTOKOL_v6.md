@@ -1,6 +1,6 @@
 # Protokół v6: curriculum hamowania i próg BCM w Forward-Forward – sprawdzenie konfirmacyjne
 
-Autor: Sławomir Majcher. Wersja po recenzjach R1–R5 (`recenzje/`, odpowiedzi `odpowiedzi/O1.md`–`O5.md`). Decyzje: `DECYZJE_AUTORA.md` (D1–D3; D4 oczekuje). Audyt źródła: `00_AUDYT.md`. Protokół jest **samowystarczalny**: wszystkie liczby, reguły i zdania raportu są tutaj; odwołania do `../eksperyment_ff_od_zera/PROTOKOL_v5.md` („FF-v5”) wskazują wyłącznie pochodzenie mechaniki.
+Autor: Sławomir Majcher. Wersja po recenzjach R1–R5 (`recenzje/`, odpowiedzi `odpowiedzi/O1.md`–`O5.md`). Decyzje: `DECYZJE_AUTORA.md` (D1–D4). Audyt źródła: `00_AUDYT.md`. Protokół jest **samowystarczalny**: wszystkie liczby, reguły i zdania raportu są tutaj; odwołania do `../eksperyment_ff_od_zera/PROTOKOL_v5.md` („FF-v5”) wskazują wyłącznie pochodzenie mechaniki.
 
 **Źródło metody:** `/my_data/VectorLegis/eksperymenty/forward_forward/potwierdzenie_30_ziaren/` (commit `9d58048`): `siec_ff.py`, `zadanie_fashion_mnist.py`, `dane.py`; opis: `blog/forward_forward_hamowanie.md`.
 
@@ -321,7 +321,7 @@ Runner, zapis atomowy, synchronizacja z weryfikacją hashy, monitor, ewaluacja i
 1. Commit: protokół (wersja zamrażana), kod, testy T1–T8 przechodzące, `SHA256SUMS` (protokół, `PROGNOZY.md`, kod, `RAPORT_SZABLON.md`), `PROGNOZY.md` (prognozy liczbowe autora i asystenta dla H1–H4 per zbiór), `RAPORT_SZABLON.md`.
 2. Benchmark i pilot (P).
 3. `MINIPILOT.json` (jedyny plik z σ_d i ρ pilota; tylko SD, ρ, koszty; metryki pilota w `zaslepione/P/`), `PARAMETRY.json` z N z reguły §7.6 – commit.
-4. Tag `hamowanie-prereg` i push na publiczne repozytorium GitHub (za zgodą autora – decyzja D4 w `DECYZJE_AUTORA.md`, jeszcze niepodjęta). Bez zgody na publiczne repozytorium: tag lokalny + jawne zastrzeżenie w raporcie „brak zewnętrznego znacznika czasu” (§12).
+4. Tag `hamowanie-prereg` i push na publiczne repozytorium GitHub (zgoda autora: D4). Bez zgody na publiczne repozytorium: tag lokalny + jawne zastrzeżenie w raporcie „brak zewnętrznego znacznika czasu” (§12).
 5. Etapy A, B, B2; `SD_ETAP_B.json` i N = max(N_P, N_B) – commit i push; Etap C; ewaluacja (§5.8); `final.py`; raport.
 Każda zmiana po tagu → `ODSTEPSTWA.md` (data, treść, powód, przed/po ewaluacji testowej).
 
