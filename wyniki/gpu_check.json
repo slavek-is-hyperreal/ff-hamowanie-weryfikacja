@@ -1,0 +1,38 @@
+{
+ "determinism": {
+  "T6_powtorka": true,
+  "T6_niezaleznosc_od_k": true
+ },
+ "throughput": {
+  "1": {
+   "wall_sec_25ep_est": 350.78057050704956,
+   "runs_per_hour_est": 10.262826116042397,
+   "mean_run_sec_25ep_est": 325.9250322977702
+  },
+  "4": {
+   "wall_sec_25ep_est": 430.81995844841003,
+   "runs_per_hour_est": 33.42463532066,
+   "mean_run_sec_25ep_est": 396.28998388846713
+  },
+  "8": {
+   "wall_sec_25ep_est": 577.1622677644094,
+   "runs_per_hour_est": 49.89931187212642,
+   "mean_run_sec_25ep_est": 530.1116640369097
+  },
+  "12": {
+   "wall_sec_25ep_est": 745.00004251798,
+   "runs_per_hour_est": 57.98657387184968,
+   "mean_run_sec_25ep_est": 649.4607748256789
+  },
+  "16": {
+   "wall_sec_25ep_est": 917.9387331008911,
+   "runs_per_hour_est": 62.74928589778677,
+   "mean_run_sec_25ep_est": 845.1496449609598
+  },
+  "24": {
+   "wall_sec_25ep_est": 1237.0673596858978,
+   "runs_per_hour_est": 69.84259937303472,
+   "mean_run_sec_25ep_est": 1126.190682252248
+  }
+ }
+}

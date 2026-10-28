@@ -1,0 +1,23 @@
+{
+ "determinism": {
+  "T6_powtorka": true,
+  "T6_niezaleznosc_od_k": true
+ },
+ "throughput": {
+  "1": {
+   "wall_sec_25ep_est": 185.97925901412964,
+   "runs_per_hour_est": 19.356997221536908,
+   "mean_run_sec_25ep_est": 165.2567744255066
+  },
+  "28": {
+   "wall_sec_25ep_est": 327.887366215388,
+   "runs_per_hour_est": 307.4226407789828,
+   "mean_run_sec_25ep_est": 244.1863918588275
+  },
+  "48": {
+   "wall_sec_25ep_est": 791.2033518155416,
+   "runs_per_hour_est": 218.40150146417224,
+   "mean_run_sec_25ep_est": 629.8724496530161
+  }
+ }
+}

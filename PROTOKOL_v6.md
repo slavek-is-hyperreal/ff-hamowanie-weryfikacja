@@ -318,7 +318,7 @@ Runner, zapis atomowy, synchronizacja z weryfikacją hashy, monitor, ewaluacja i
 - Koszt biegu (z logowaniem E1/E4/E6) mierzony w pilocie; pod-limity: P + A + B + B2 ≤ 4 USD; C ≤ 5 USD; rezerwa 0.8 USD na ewaluację, powtórki po błędzie kodu i awarie.
 - **Prognoza przed Etapem C:** koszt C = (średni koszt biegu w Etapie B; przy zmianie typu GPU między B a C – koszt zmierzony w benchmarku/T6 na nowym typie) × 14·N. Jeśli prognoza > (pozostałe środki − 0.8 USD): `BP` usuwane z Etapu C (jedyne dopuszczalne cięcie; prognoza 12·N). Jeśli nadal za mało: wstrzymanie; zwiększenie limitu wymaga zmiany D3 przez autora i wpisu w `ODSTEPSTWA.md` przed Etapem C. N nie jest cięte.
 - Przekroczenie pod-limitu w trakcie etapu → wstrzymanie i decyzja autora (j.w.).
-- Sprzęt: wybór po benchmarku przepustowości; k procesów na GPU ustalone w benchmarku.
+- Sprzęt: wybór po benchmarku przepustowości; k procesów ustalone w benchmarku. **Wynik benchmarku (2026-10-28, `wyniki/gpu_check.json`, `wyniki/cpu_check.json`, instancja Vast z RTX 3090 i Xeon E5-2680 v4, 56 wątków):** GPU ok. 70 biegów/h (k = 24; sieć 10 × 64 jest ograniczona narzutem uruchamiania kerneli), CPU ok. 307 biegów/h (k = 28). **Wszystkie etapy liczone na CPU** (`--device cpu`, `torch.set_num_threads(1)`, `MKL_CBWR=COMPATIBLE`), k = 28; T6 (powtarzalność, niezależność od k) zaliczony na CPU. Zmiana typu procesora między etapami wymaga T6 na nowym typie i wpisu w `ODSTEPSTWA.md` (jak dla GPU, §5.6).
 
 ## 9. Kolejność i zamrożenie (R1-14)
 1. Commit: protokół (wersja zamrażana), kod, testy T1–T8 przechodzące, `SHA256SUMS` (protokół, `PROGNOZY.md`, kod, `RAPORT_SZABLON.md`), `PROGNOZY.md` (prognozy liczbowe autora i asystenta dla H1–H4 per zbiór), `RAPORT_SZABLON.md`.
